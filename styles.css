@@ -25,11 +25,27 @@ body {
     }
 }
 
+.truck {
+    position:absolute;
+    left:10px;
+    bottom:10px;
+    width:26%;
+    animation: Rumble 0.25s ease infinite;
+  
+  }
+
+@keyframes Rumble {
+    0%{ transform:translateY(0) translateZ(0); }
+    50%{ transform:translateY(2px) translateZ(0);}
+    100%{ transform:translateY(0) translateZ(0); }
+  }
+
 
 /* GLOBAL STYLES */
 .flex {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -40,4 +56,8 @@ header {
 
 .grayBG {
     background-color: #737373;
+}
+
+.weather {
+    width: 10%;
 }

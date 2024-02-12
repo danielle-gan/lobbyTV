@@ -5,18 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
     <title>DATA-MAIL</title>
 </head>
 
 <body class="grayBG">
     <div class="scrolling-image"></div>
+    <img class="truck" src="./truck.png">
     <header class="header">
         <div class="flex">
+            <img src="logo.png">
             <h1>Welcome To Data-Mail</h1>
         </div>
     </header>
+    <div class="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/41d70n72d72/newington/?unit=us"
+            data-label_1="NEWINGTON" data-label_2="WEATHER" data-font="Noto Serif" data-icons="Climacons Animated"
+            data-days="3" data-basecolor="rgba(1, 1, 1, 0)" data-textcolor="#000000" data-highcolor="#da1b1b"
+            data-lowcolor="#1779c0" data-suncolor="#fba227" data-cloudcolor="#737373" data-cloudfill="#ffffff" data-raincolor="#1779c0">NEWINGTON
+            WEATHER</a>
+    </div>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
 </body>
 
 </html>

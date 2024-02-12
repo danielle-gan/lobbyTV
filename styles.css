@@ -1,65 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300');
-
-
-body {margin:0; font-family: 'Raleway', sans-serif;
-font-weight:300;
-}
-article {padding-bottom:2em;}
-
-h1, h2 {font-weight:300;}
-
-code {background:rgba(0,0,0,.7); color:#ddd; padding:4px; border-radius:4px;}
-
-a {color:gold;}
-
-.background-box {
-background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-  padding:4em;
-  color:white;
-  position:relative;
-  overflow:hidden;
-}
-.background {
-  height:100%;
-  position:absolute;
-  top:0; left:0; right:0; 
-   background-size:50% 100px;
-  transform-origin: center bottom;
-   width:200%;
-   background-size:50% auto;
-
-}
-.background.top {
-  background:url(https://res.cloudinary.com/ez-nettools/image/upload/v1496775273/Clouds-Group_zzdy9k.png) repeat-x bottom ;
-  z-index:15;
-  opacity:0.6;
-  animation: move_wave 15s linear infinite;
-  background-size:50% auto;
-
-
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
-.background.mid {
-  background:url(https://res.cloudinary.com/ez-nettools/image/upload/v1496775273/Clouds-Group_zzdy9k.png) repeat-x left bottom;
-  opacity:.6;
-  z-index:10;
- animation: move_wave 10s linear infinite;
-  background-size:50% auto;
-
-
-
-}
-
-.background.bot {
-  background:url(https://res.cloudinary.com/ez-nettools/image/upload/v1496775273/Clouds-Group_zzdy9k.png) repeat-x bottom;
-  opacity:1;
-  background-size:50% 100px;
-  z-index:5;
-  animation: move_wave 5s linear infinite;
-}
-
-@keyframes move_wave {
-  0%{ transform:translateX(0) translateZ(0); }
-  50% { transform:translateX(-25%) scaleY(.55) translateZ(0); }
-  100% { transform:translateX(-50%) translateZ(0); }
+.scrolling-image {
+    background: url("./summer.png") repeat-x;
+    height: 750px;
+    width: 7680px;
+    animation: slide 3s linear infinite;
+  }
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-3840px); /* Adjusted to match the container width */
+    }
 }

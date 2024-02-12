@@ -16,12 +16,11 @@
 .grid {
     z-index: 10;
     margin-top: 2%;
-    /* padding: 1%; */
     display: grid;
     width: 65%;
-    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-columns: 1.4fr 0.7fr;
     grid-template-rows: 0.5fr 1.5fr 1fr;
-    gap: 20px 10px;
+    gap: 10px 10px;
     grid-auto-flow: row;
     /* background-color: rgba(255, 255, 255, 0.6); */
     grid-template-areas:
@@ -36,6 +35,8 @@
     align-items: center;
     border: 3px solid white; 
     padding: 1%;
+    background-color: black;
+    height: 750px;
 }
 
 .Time {
@@ -43,10 +44,11 @@
     /* margin-top: 50px; */
     border: 3px solid white; 
     padding: 5%;
+    height: 140px;
 }
 
 .Weather {
     grid-area: Weather;
     border: 3px solid white; 
-    padding: 11%;
+    padding: 10%;
 }

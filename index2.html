@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +11,65 @@
     <script src="script2.js"></script>
 
 </head>
+
 <body>
     <main>
-        <div class="dark relative flex flex-col h-[100vh] items-center bg-black transition-bg">
+        <div class="dark relative h-[100vh] items-center bg-black transition-bg">
             <div class="absolute inset-0 overflow-hidden">
                 <div class="jumbo absolute -inset-[10px] opacity-70 "></div>
             </div>
-            <div class="flex items-center">
-                <h1 class="mt-8 text-5xl font-bold text-white opacity-80 ">
+            <div class="flex justify-center items-center">
+                <h1 class="mt-8 text-7xl font-bold text-white">
                     Welcome To Data-Mail
                 </h1>
-                <div id="digital-clock-container">
-                    <div id="current_date" class="opacity-80"></div>
-                    <div id="digital-clock" class="opacity-80"></div>
+            </div>
+            <div class="flex justify-center">
+                <div class="grid items-center">
+                    <div class="Rotating-Images flex flex-col items-center">
+                        <h2 class="text-white text-4xl opacity-80 font-bold">2024 Color Of The Year</h2>
+                        <img src="pantone.jpg" alt="pantone color of the year">
+                    </div>
+                    <div class="Time">
+                        <div id="digital-clock-container">
+                            <div id="current_date" class="opacity-80"></div>
+                            <div id="digital-clock" class="opacity-80"></div>
+                        </div>
+                    </div>
+                    <div class="Weather">
+                        <script>
+                            (function (d, s, id) {
+                                if (d.getElementById(id)) {
+                                    if (window.__TOMORROW__) {
+                                        window.__TOMORROW__.renderWidget();
+                                    }
+                                    return;
+                                }
+                                const fjs = d.getElementsByTagName(s)[0];
+                                const js = d.createElement(s);
+                                js.id = id;
+                                js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+                                fjs.parentNode.insertBefore(js, fjs);
+                            })(document, 'script', 'tomorrow-sdk');
+                        </script>
+
+                        <div class="tomorrow" data-location-id="122831" data-language="EN" data-unit-system="IMPERIAL"
+                            data-skin="light" data-widget-type="upcoming">
+                            <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer"
+                                target="_blank"
+                                style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <script src="time.js"> </script>
         </div>
+
     </main>
+    <script src="time.js"> </script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
 </body>
+
 </html>

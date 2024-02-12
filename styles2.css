@@ -1,18 +1,52 @@
 #digital-clock-container {
     color: #f3f3f3;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-    padding-top: 20px;
-    padding-bottom: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 40px;
     text-align: center;
 }
 
-#current_date{
+#current_date {
     font-size: 20px;
     font-weight: bold;
+}
+
+.grid {
+    z-index: 10;
+    margin-top: 2%;
+    /* padding: 1%; */
+    display: grid;
+    width: 65%;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr;
+    gap: 20px 10px;
+    grid-auto-flow: row;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    grid-template-areas:
+        "Rotating-Images Time"
+        "Rotating-Images Weather"
+        "Rotating-Images Weather";
+}
+
+.Rotating-Images {
+    grid-area: Rotating-Images;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white; 
+    padding: 1%;
+}
+
+.Time {
+    grid-area: Time;
+    /* margin-top: 50px; */
+    border: 3px solid white; 
+    padding: 5%;
+}
+
+.Weather {
+    grid-area: Weather;
+    border: 3px solid white; 
+    padding: 11%;
 }

@@ -1,10 +1,12 @@
-body, html {
+body {
     height: 100%;
     margin: 0;
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family: 'Libre Baskerville';
 }
 
+/* BACKGROUND IMAGE STYLES */
 .scrolling-image {
     position: absolute;
     z-index: -1;
@@ -24,11 +26,18 @@ body, html {
 }
 
 
-.absolute {
-    position: absolute;
-}
-
+/* GLOBAL STYLES */
 .flex {
     display: flex;
     justify-content: center;
+}
+
+
+/* HEADER STYLES */
+header {
+
+}
+
+.grayBG {
+    background-color: #737373;
 }

@@ -3,14 +3,23 @@
     margin-left: auto;
     margin-right: auto;
     font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 80px;
     text-align: center;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 174, 255),
+    /* 0 0 82px rgb(0, 174, 255), */
+    0 0 92px rgb(0, 174, 255),
+    0 0 102px rgb(0, 174, 255),
+    0 0 151px rgb(0, 174, 255);
 }
 
 #current_date {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 28px;
+    /* font-weight: bold; */
 }
 
 .grid {
@@ -34,7 +43,13 @@
     grid-area: Rotating-Images;
     justify-content: center;
     align-items: center;
-    border: 3px solid white; 
+    border: 3px solid white;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 174, 255),
+    0 0 92px rgb(0, 174, 255);
     padding: 1%;
     background-color: black;
     height: 750px;
@@ -71,6 +86,17 @@
 
 .Weather {
     grid-area: Weather;
-    border: 3px solid white; 
+    border: 3px solid white;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 174, 255),
+    0 0 92px rgb(0, 174, 255); 
     padding: 8%;
+}
+
+header {
+    opacity: 1;
+    z-index: 100;
 }

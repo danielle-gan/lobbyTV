@@ -19,17 +19,15 @@ function updateRotatingImages() {
     // Update header text
     rotatingHeader.textContent = headerTexts[currentIndex];
 
-    // Set different transition durations for image and header
-    rotatingImg.style.animation = 'fadeInFromNone 4s ease-in-out infinite'; // Example: 2 seconds for the image
-    rotatingHeader.style.animation = 'fadeInFromNone 4s ease-in-out infinite'; // Example: 1 second for the header
+    rotatingImg.style.animation = 'fadeInFromNone 8s ease-in-out infinite'; 
+    rotatingHeader.style.animation = 'fadeInFromNone 8s ease-in-out infinite';
 
 
     // Increment index or reset to 0 if reached the end
     currentIndex = (currentIndex + 1) % imageSources.length;
 }
 
-// Call the function initially
 updateRotatingImages();
 
-// Set interval to change images every 3 seconds (adjust as needed)
-setInterval(updateRotatingImages, 4000);
+// Set interval to change images every 8 seconds (adjust with the above animations as needed)
+setInterval(updateRotatingImages, 8000);

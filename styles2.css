@@ -4,7 +4,7 @@
     margin-right: auto;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
 }
 
@@ -18,9 +18,10 @@
     margin-top: 2%;
     display: grid;
     width: 65%;
+    height: 800px;
     grid-template-columns: 1.4fr 0.7fr;
-    grid-template-rows: 0.5fr 1.5fr 1fr;
-    gap: 10px 10px;
+    grid-template-rows: 0.7fr 1fr 1fr;
+    gap: 2%;
     grid-auto-flow: row;
     /* background-color: rgba(255, 255, 255, 0.6); */
     grid-template-areas:
@@ -37,18 +38,39 @@
     padding: 1%;
     background-color: black;
     height: 750px;
+    position:relative;
 }
+
+#rotating-img {
+    animation: fadeInFromNone 0.5s ease-out;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    50% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+
 
 .Time {
     grid-area: Time;
-    /* margin-top: 50px; */
-    /* border: 3px solid white;  */
-    padding: 5%;
-    height: 140px;
+    align-items: center;
+    justify-content: center;
 }
 
 .Weather {
     grid-area: Weather;
     border: 3px solid white; 
-    padding: 10%;
+    padding: 8%;
 }

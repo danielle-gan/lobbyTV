@@ -44,7 +44,7 @@ body {
 
     filter: blur(10px) invert(100%);
 
-    mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
+    mask-image: radial-gradient(ellipse at 30% 0%, black 40%, transparent 70%);
 
     pointer-events: none;
 }

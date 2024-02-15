@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="background.css">
     <link rel="stylesheet" href="styles2.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script2.js"></script>
+    <script src="greeting.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Scope+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,20 +24,20 @@
             <div class="flex justify-center items-center">
                 <div class="header mt-4">
                     <img src="logo.png" alt="Data Mail logo" class="opacity-100 mr-8 m-4 z-10" width="150">
-                    <h1 class="m-4 text-7xl font-bold opacity-100 z-10">
+                    <h1 class="m-4 text-7xl font-bold opacity-100 z-10" >
                         Welcome To Data-Mail
                     </h1>
                 </div>
             </div>
             <div class="flex justify-center items-center z-10 text-white text-2xl opacity-100">
-                <p class="z-10 text-white text-3xl opacity-100 mt-8">We're so happy to have you!</p>
+                <p class="z-10 text-white text-3xl opacity-100 mt-8 satisfy" id="greeting-link">We are so happy to have you!</p>
             </div>
             <div class="flex justify-center">
                 <div class="grid items-center">
 
                     <div class="Rotating-Images flex flex-col items-center">
-                        <h2 class="text-white text-4xl font-bold neon mb-5" id="rotating-header">2024 Color Of The Year</h2>
-                        <img src="pantone.jpg" alt="pantone color of the year" id="rotating-img">
+                        <h2 class="text-white text-4xl font-bold satisfy mb-8" id="rotating-header">2024 Color Of The Year</h2>
+                        <img src="./slideshow_images/pantone.jpg" alt="pantone color of the year" id="rotating-img">
                     </div>
 
                     <div class="Time ">
@@ -44,7 +47,7 @@
                         </div>
                     </div>
 
-                    <div class="Weather bg-black" >
+                    <div class="Weather bg-black comfortaa" >
                         <div id="snow"></div>
                         <div id="rain"></div>
                         <div id="sun"></div>
@@ -58,8 +61,8 @@
                             <img src="./weather_icons/Clear.png" width="150" id="CurrentIcon">
                         </div>
                         <div class="flex justify-center">
-                            <p class="text-white text-7xl neon" id="CurrentTemp">
-                                32&deg;F
+                            <p class="text-white text-7xl neon font-bold" id="CurrentTemp">
+                                32<span class="font-normal text-4xl">&deg;F</span>
                             </p>
                         </div>
                         <div class="flex justify-between mt-8 border-b-2 border-white">
@@ -71,43 +74,43 @@
                             </p>
                         </div>
                         <div class="flex justify-start items-center">
-                            <div class="text-white mr-8 w-4 font-mono" id="TomorrowLabel">Thu:</div>
+                            <div class="text-white mr-8 w-4 day-label" id="Day1Label">Thu:</div>
                             <div><img src="./weather_icons/Clouds.png" id="TomorrowIcon"></div>
-                            <div class="ml-10" >
-                                <p class="text-cyan-300 text-3xl" id="TomorrowMin">
+                            <div class="ml-12" >
+                                <p class="text-cyan-300 text-2xl" id="TomorrowMin">
                                     Lo 28&deg;F
                                 </p>
                             </div>
-                            <div class="ml-10">
-                                <p class="text-red-400 text-3xl" id="TomorrowMax">
+                            <div class="ml-12">
+                                <p class="text-red-400 text-2xl" id="TomorrowMax">
                                     Hi 39&deg;F
                                 </p>
                             </div>
                         </div>
                         <div class="flex justify-start items-center">
-                            <div class="text-white mr-8 w-4 font-mono" id="Day2Label">Fri:</div>
+                            <div class="text-white mr-8 w-4 day-label" id="Day2Label">Fri:</div>
                             <div class="just"><img src="./weather_icons/Thunderstorm.png" id="Day2Icon"></div>
-                            <div class="ml-10">
-                                <p class="text-cyan-300 text-3xl" id="Day2Min">
+                            <div class="ml-12">
+                                <p class="text-cyan-300 text-2xl" id="Day2Min">
                                     Lo 37&deg;F
                                 </p>
                             </div>
-                            <div class="ml-10">
-                                <p class="text-red-400 text-3xl" id="Day2Max">
+                            <div class="ml-12">
+                                <p class="text-red-400 text-2xl" id="Day2Max">
                                     Hi 49&deg;F
                                 </p>
                             </div>
                         </div>
                         <div class="flex justify-start items-center">
-                            <div class="text-white mr-8 w-4 font-mono" id="Day3Label">Sat:</div>
+                            <div class="text-white mr-8 w-4 day-label" id="Day3Label">Sat:</div>
                             <div><img src="./weather_icons/light_clouds.png" id="Day3Icon"></div>
-                            <div class="ml-10">
-                                <p class="text-cyan-300 text-3xl" id="Day3Min">
+                            <div class="ml-12">
+                                <p class="text-cyan-300 text-2xl" id="Day3Min">
                                     Lo 48&deg;F
                                 </p>
                             </div>
-                            <div class="ml-10">
-                                <p class="text-red-400 text-3xl" id="Day3Max">
+                            <div class="ml-12">
+                                <p class="text-red-400 text-2xl" id="Day3Max">
                                     Hi 64&deg;F
                                 </p>
                             </div>

@@ -1,7 +1,7 @@
 var currentIndex = 0;
 
 // Array of image sources and headers
-const imageSources = ["pantone.jpg", "InformedDelivery.png", "2024Q1_NewHires.jpg", "Hiring.png"];
+const imageSources = ["./slideshow_images/pantone.jpg", "./slideshow_images/InformedDelivery.png", "./slideshow_images/2024Q1_NewHires.jpg", "./slideshow_images/Hiring.png"];
 const headerTexts = ["2024 Color Of The Year", "Sign Up For Informed Delivery", "Say hello to our new employees!", "Join Our Family!"] ;
 
 // Function to update image and header with fade-in effect

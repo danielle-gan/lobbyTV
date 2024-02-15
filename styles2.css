@@ -1,3 +1,5 @@
+
+
 #digital-clock-container {
     padding-top: 5%;
     color: #f3f3f3;
@@ -126,6 +128,19 @@
     0 0 151px rgb(0, 174, 255);
 }
 
+.satisfy {
+  font-family: "Scope One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comfortaa {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 /* WEATHER ANIMATIONS */
 #snow {
@@ -173,22 +188,25 @@
   .cloud1 {
     margin-top: -30px;
     fill: rgba(255,255,255,.1);
-    animation: move 6s linear infinite;
+    animation: move 12s linear infinite;
     overflow: hidden;
   }
   
   .cloud2 {
     margin-top: 40px;
     fill: rgba(255,255,255,.1);
-    animation: move 8s linear 2s infinite backwards;
+    animation: move 16s linear 2s infinite backwards;
   }
   
   @keyframes move {
-    from {
-      transform: translateX(-180px);
+    0% {
+      transform: translateX(-200px);
     }
-    to {
+    50% {
       transform: translateX(160px);
+    }
+    100% {
+      transform: translateX(-200px);
     }
   }
   

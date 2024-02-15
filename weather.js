@@ -94,7 +94,7 @@ fetch(apiURL)
     let day3Desc = data.list[n+16].weather[0].main;
     let day3Desc2 = data.list[n+16].weather[0].description;
     let day3Min = Math.round(data.list[n+16].main.temp_min);
-    let day3Max = Math.round(data.list[n+16].main.temp_max);
+    let day3Max = Math.round(data.list[n+24].main.temp_max);
 
     // Some arrays to hold things:
     let minsAPIArr = [currentMin, tomorrowMin, day2Min, day3Min];
@@ -102,7 +102,7 @@ fetch(apiURL)
     let descsAPIArr = [currentDesc, tomorrowDesc, day2Desc, day3Desc]
     let descs2APIArr = [currentDesc2, tomorrowDesc2, day2Desc2, day3Desc2]
 
-    temp.innerHTML = currentTemp + "&deg;F"; 
+    temp.innerHTML = currentTemp + `<span class="font-normal text-4xl">&deg;F</span>`; 
     animateWeather(currentDesc);
 
 minArr.forEach((element, index) => {

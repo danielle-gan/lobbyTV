@@ -1,5 +1,3 @@
-
-
 //API KEY 
 let queryURL = "api.openweathermap.org/data/2.5/forecast?";
 let lat = "lat=41.69788000&";
@@ -31,6 +29,13 @@ var day3icon = document.getElementById("Day3Icon");
 minArr = [tempmin, tomorrowmin, day2min, day3min];
 maxArr = [tempmax, tomorrowmax, day2max, day3max];
 iconArr = [tempicon, tomorrowicon, day2icon, day3icon]; 
+
+
+// html animation divs
+let rain = document.getElementById("rain");
+let sun = document.getElementById("sun");
+let snow = document.getElementById("snow");
+let clouds = document.getElementsByClassName("clouds");
 
 fetch(apiURL)
 .then((response) => {
@@ -74,6 +79,7 @@ fetch(apiURL)
     let descs2APIArr = [currentDesc2, tomorrowDesc2, day2Desc2, day3Desc2]
 
     temp.innerHTML = currentTemp + "&deg;F"; 
+    animateWeather(currentDesc);
 
 minArr.forEach((element, index) => {
     element.innerHTML = "Lo " + minsAPIArr[index] + "&deg;F";
@@ -91,9 +97,6 @@ iconArr.forEach((element, index) => {
     }
   });
 
-
-
-
 // TEST to make sure I'm getting the info I need :) 
     function logAll(i) {
         console.log(i);
@@ -104,5 +107,40 @@ iconArr.forEach((element, index) => {
     console.error("Error fetching data:", error);
 });
 
+
+function animateWeather(currentDesc) {
+if(currentDesc == "Clear") {
+    sun.style.display = "block"
+    rain.style.display = "none"
+    snow.style.display = "none"
+    Array.from(clouds).forEach(cloud => {
+        cloud.style.display = "none";
+    });
+}
+else if (currentDesc == "Snow") {
+    sun.style.display = "none"
+    rain.style.display = "none"
+    snow.style.display = "block"
+    Array.from(clouds).forEach(cloud => {
+        cloud.style.display = "none";
+    });
+}
+else if (currentDesc == "Rain") {
+    sun.style.display = "none"
+    rain.style.display = "block"
+    snow.style.display = "none"
+    Array.from(clouds).forEach(cloud => {
+        cloud.style.display = "none";
+    });
+}
+else if (currentDesc == "Clouds") {
+    sun.style.display = "none"
+    rain.style.display = "none"
+    snow.style.display = "none"
+    Array.from(clouds).forEach(cloud => {
+        cloud.style.display = "block";
+    });
+}
+}
 
 

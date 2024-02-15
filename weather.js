@@ -46,6 +46,33 @@ fetch(apiURL)
 })
 .then((data) => {
     console.log(data);
+    var extracted_time = data.list[0].dt_txt.slice(-8);
+    console.log(extracted_time);
+
+    if (extracted_time == "21:00:00") {
+        n = 1;
+    }
+    else if (extracted_time == "18:00:00") {
+        n = 2;
+    }
+    else if (extracted_time == "15:00:00") {
+        n = 3;
+    }
+    else if (extracted_time == "12:00:00") {
+        n = 4;
+    }
+    else if (extracted_time == "09:00:00") {
+        n = 5;
+    }
+    else if (extracted_time == "06:00:00") {
+        n = 6;
+    }
+    else if (extracted_time == "03:00:00") {
+        n = 7;
+    }
+    else if (extracted_time == "00:00:00") {
+        n = 8;
+    }
 
     let current = data.list[0].main;
     let currentTemp = Math.round(current.temp);
@@ -54,23 +81,20 @@ fetch(apiURL)
     let currentMin = Math.round(current.temp_min);
     let currentMax = Math.round(current.temp_max);
 
-    let tomorrow = data.list[1].main;
-    let tomorrowDesc = data.list[1].weather[0].main;
-    let tomorrowDesc2 = data.list[1].weather[0].description;
-    let tomorrowMin = Math.round(tomorrow.temp_min);
-    let tomorrowMax = Math.round(tomorrow.temp_max);
+    let tomorrowDesc = data.list[n].weather[0].main;
+    let tomorrowDesc2 = data.list[n].weather[0].description;
+    let tomorrowMin = Math.round(data.list[n].main.temp_min);
+    let tomorrowMax = Math.round(data.list[n+6].main.temp_max);
 
-    let day2 = data.list[2].main;
-    let day2Desc = data.list[2].weather[0].main;
-    let day2Desc2 = data.list[2].weather[0].description;
-    let day2Min = Math.round(day2.temp_min);
-    let day2Max = Math.round(day2.temp_max);
+    let day2Desc = data.list[n+8].weather[0].main;
+    let day2Desc2 = data.list[n+8].weather[0].description;
+    let day2Min = Math.round(data.list[n+8].main.temp_min);
+    let day2Max = Math.round(data.list[n+14].main.temp_max);
 
-    let day3 = data.list[3].main;
-    let day3Desc = data.list[3].weather[0].main;
-    let day3Desc2 = data.list[3].weather[0].description;
-    let day3Min = Math.round(day3.temp_min);
-    let day3Max = Math.round(day3.temp_max);
+    let day3Desc = data.list[n+16].weather[0].main;
+    let day3Desc2 = data.list[n+16].weather[0].description;
+    let day3Min = Math.round(data.list[n+16].main.temp_min);
+    let day3Max = Math.round(data.list[n+16].main.temp_max);
 
     // Some arrays to hold things:
     let minsAPIArr = [currentMin, tomorrowMin, day2Min, day3Min];

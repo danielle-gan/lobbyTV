@@ -183,11 +183,15 @@
     animation: move 8s linear 2s infinite backwards;
   }
   
-  @-webkit-keyframes move {
-    from {-webkit-transform: translateX(-180px);}
-    to {-webkit-transform: translateX(160px);}
+  @keyframes move {
+    from {
+      transform: translateX(-180px);
+    }
+    to {
+      transform: translateX(160px);
+    }
   }
-
+  
   @keyframes animatedSnow {
     0% {
       background-position: 0 0;

@@ -1,13 +1,9 @@
-// Array of image sources
-const imageSources = ["pantone.jpg", "valentines.png", "2024Q1_NewHires.jpg"];
-
-// Array of header texts
-const headerTexts = ["2024 Color Of The Year", "Upcoming Holiday:", "Say hello to our new employees!"];
-
-let currentIndex = 0;
+// Array of image sources and headers
+const imageSources = ["pantone.jpg", "confetti.png", "2024Q1_NewHires.jpg"];
+const headerTexts = ["2024 Color Of The Year", "Upcoming Holiday: ", "Say hello to our new employees!"];
 
 // Function to update image and header with fade-in effect
-function updateRotatingImages() {
+function updateRotatingImages(headerTexts) {
     // Get elements
     const rotatingImg = document.getElementById("rotating-img");
     const rotatingHeader = document.getElementById("rotating-header");
@@ -29,5 +25,9 @@ function updateRotatingImages() {
 
 updateRotatingImages();
 
-// Set interval to change images every 8 seconds (adjust with the above animations as needed)
+// // Set interval to change images every 8 seconds (adjust with the above animations as needed)
 setInterval(updateRotatingImages, 8000);
+
+
+
+

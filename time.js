@@ -53,7 +53,12 @@ function update(t) {
 
 Time();
 
-const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const options2 = { weekday: 'long'};
+
+
 document.getElementById("current_date").innerHTML = new Date().toLocaleDateString('en-US', options);
 
+
+document.getElementById("current-day").innerHTML = new Date().toLocaleDateString('en-US', options2);
 

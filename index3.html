@@ -28,20 +28,23 @@
     </header>
     <main class="h-[90vh] light-blue overflow-y-hidden">
         <div class="flex justify-center indie">
-            <p class=" text-4xl text-center mt-5 w-4/5 bg-white rounded-3xl">Data-Mail, Inc. is a full service direct marketing firm that can
+            <p class=" text-4xl text-center mt-5 w-4/5 bg-white rounded-3xl">Data-Mail, Inc. is a full service direct
+                marketing firm that can
                 provide complete, turnkey solutions across multiple channels, scalable to large volumes.</p>
         </div>
 
         <div class="flex justify-center h-[35vh]">
-            <div class="flex justify-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
+            <div class="flex flex-col items-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
                 <div
                     class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-1/5 mt-2 text-3xl ">
                     Hiring Now!!
                 </div>
+                <img src="./hiringQR.png" style="height: 300px;">
             </div>
 
             <div class="flex flex-col items-center bg-white rounded-2xl w-2/5 ml-12 mt-12 indie">
-                <div class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/3 h-1/8 mt-2 text-3xl ">
+                <div
+                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/3 h-1/8 mt-2 text-3xl ">
                     Weather
                 </div>
                 <div class="flex mt-1 items-center ">
@@ -56,7 +59,7 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-between w-4/5">
-                    <p >Sat: </p>
+                    <p>Sat: </p>
                     <video width="100" height="100" autoplay loop class="-ml-4">
                         <source src="./bulletin_images/Clear sky.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -65,7 +68,7 @@
                         <p class="text-3xl" id="TomorrowMin">74&deg;F</p>
                         <p class="text-3xl" id="TomorrowMax">74&deg;F</p>
                     </div>
-                    <p >Sun: </p>
+                    <p>Sun: </p>
                     <video width="100" height="100" autoplay loop class="-ml-4">
                         <source src="./bulletin_images/Snow.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -86,17 +89,22 @@
                 </div>
             </div>
 
-            <div class="flex justify-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
-                <div
-                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-1/5 mt-2 text-3xl ">
-                    < WeekDay >
+            <div class="flex flex-col items-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
+                <div class="flex justify-center items-center dark-blue text-white rounded-t-2xl w-full h-1/5 text-3xl "
+                    id="current-day">
+                    < WeekDay>
+                </div>
+                <div class="flex flex-col items-center mt-20" id="digital-clock-container">
+                    <div id="current_date" class="text-3xl"></div>
+                    <div id="digital-clock" class="text-7xl neon"></div>
                 </div>
             </div>
         </div>
 
         <div class="flex justify-center h-1/2">
             <div class="flex flex-col items-center bg-white rounded-2xl w-1/3 mt-12 indie">
-                <div class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-12 mt-2 text-3xl ">
+                <div
+                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-12 mt-2 text-3xl ">
                     Meet Our Leadership!
                 </div>
                 <div class="flex justify-evenly items-center text-white rounded-2xl w-3/4 mt-8 text-4xl ">
@@ -109,62 +117,100 @@
             </div>
 
             <div class="flex flex-col items-center bg-white rounded-2xl w-2/5 ml-12 mt-12 indie">
-                <div class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-12 mt-2 text-3xl ">
+                <div
+                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-12 mt-2 text-3xl ">
                     Important Announcements
                 </div>
                 <div class="mt-6">
-                <ul>
-                    <li>
-                        <a href="#" contenteditable>
-                            <h2>Title #1</h2>
-                            <p>Text Content #1</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" contenteditable>
-                            <h2>Title #2</h2>
-                            <p>Text Content #2</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" contenteditable>
-                            <h2>Title #3</h2>
-                            <p>Text Content #3</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" contenteditable>
-                            <h2>Title #4</h2>
-                            <p>Text Content #4</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" contenteditable>
-                            <h2>Title #5</h2>
-                            <p>Text Content #5</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" contenteditable>
-                            <h2>Title #6</h2>
-                            <p>Text Content #6</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-
-            <div class="flex justify-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
-                <div
-                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-12 mt-2 text-3xl ">
-                    Services Offered
+                    <ul>
+                        <li>
+                            <a href="#" contenteditable>
+                                <h2>Title #1</h2>
+                                <p>Text Content #1</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" contenteditable>
+                                <h2>Title #2</h2>
+                                <p>Text Content #2</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" contenteditable>
+                                <h2>Title #3</h2>
+                                <p>Text Content #3</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" contenteditable>
+                                <h2>Title #4</h2>
+                                <p>Text Content #4</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" contenteditable>
+                                <h2>Title #5</h2>
+                                <p>Text Content #5</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" contenteditable>
+                                <h2>Title #6</h2>
+                                <p>Text Content #6</p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="flex flex-col items-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
+                <div class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-12 mt-2 text-3xl ">
+                    Services Offered
+                </div>
+
+                <div id="scrolling-services">
+                    <div class="scrolling-content">
+                        <div class="flex items-center">
+                            <img src="bulletin_images/laser.png">
+                            <p class="ml-2">Laser Personalization</p>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="mr-2">Digital Printing</p>
+                            <img src="bulletin_images/printing.png">
+                        </div>
+                        <div class="flex items-center">
+                            <img src="bulletin_images/envelope.png">
+                            <p class="ml-2">Envelope Converting</p>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="mr-2">Paper Procurement</p>
+                            <img src="bulletin_images/paper.png">
+                        </div>
+                        <div class="flex items-center">
+                            <img src="bulletin_images/Postage.png">
+                            <p class="ml-2">Postage Optimization</p>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="mr-2">Multi-Channel Services</p>
+                            <img src="bulletin_images/MCS.png">
+                        </div>
+                        <div class="flex items-center">
+                            <img src="bulletin_images/cmg.png">
+                            <p class="ml-2">Commingling</p>
+                        </div>
+                        <div class="flex items-center">
+                            <p class="mr-2">Lettershop Services</p>
+                            <img src="bulletin_images/lettershop.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
     </main>
 
-
+    <script src="time.js"> </script>
 </body>
 
 </html>

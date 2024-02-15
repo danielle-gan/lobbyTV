@@ -3,6 +3,15 @@
   --light-blue: #B8D8EF;
 }
 
+
+.dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.light-blue {
+  background-color: var(--light-blue);
+}
+
 .indie {
   font-family: "Indie Flower", cursive;
   font-weight: 500;
@@ -45,9 +54,9 @@ ul li a{
   color:#000;
   background:#ffc;
   display:block;
-  height:10em;
+  height:12em;
   width:12em;
-  padding:.01em;
+  padding: 10px;
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   transform: rotate(-6deg);
   /* transition: transform .15s linear; */
@@ -59,8 +68,7 @@ ul li:nth-child(1) a{
   transform:rotate(-3deg);
   position:relative;
   margin-right: 2rem;
-  margin-top: 1rem;
-
+  /* margin-top: 1rem; */
 }
 ul li:nth-child(2) a{
   transform:rotate(4deg);
@@ -68,7 +76,7 @@ ul li:nth-child(2) a{
   background:#cfc;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   animation-delay: 10s;
 }
 ul li:nth-child(3) a{
@@ -81,14 +89,14 @@ ul li:nth-child(3) a{
 ul li:nth-child(4) a{
   transform:rotate(-3deg); 
   background:#cfc;
-  margin-left: 8rem;
+  margin-left: 4rem;
   margin-top: 2rem;
   animation-delay: 30s;
 }
 ul li:nth-child(5) a{
-  transform:rotate(7deg);
+  transform:rotate(-9deg);
   margin-left: 4rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   animation-delay: 24s;
   background:#ccf;
 }
@@ -115,10 +123,27 @@ ul li:nth-child(6) a{
 } */
 
 
-.dark-blue {
-  background-color: var(--dark-blue);
+
+
+#scrolling-services {
+  height: 800px; /* Set a fixed height for the container */
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; /* Ensure proper positioning of the absolute elements */
+  white-space: nowrap;
+  display: inline-block;
 }
 
-.light-blue {
-  background-color: var(--light-blue);
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.scrolling-content {
+  display: inline-block;
+white-space: nowrap;
+  animation: scrollUp 8s linear infinite; /* Adjust duration as needed */
 }

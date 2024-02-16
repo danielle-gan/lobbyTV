@@ -8,6 +8,10 @@
   background-color: var(--dark-blue);
 }
 
+.dark-blue-text {
+  color: var(--dark-blue);
+}
+
 .light-blue {
   background-color: var(--light-blue);
 }
@@ -87,12 +91,12 @@ ul li:nth-child(3) a{
   transform:rotate(-3deg);
   position:relative;
   margin-right: 4rem;
-  background:#ccf;
+  background:#fff;
   animation-delay: 20s;
 }
 ul li:nth-child(4) a{
-  transform:rotate(-3deg); 
-  background:#cfc;
+  transform:rotate(3deg); 
+  background:#fff;
   margin-left: 4rem;
   margin-top: 2rem;
   animation-delay: 30s;

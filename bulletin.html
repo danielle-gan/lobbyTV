@@ -17,8 +17,11 @@
 
 <body>
     <header class="flex h-[10vh] justify-start items-center dark-blue p-10 static dm-sans">
-        <h1 class="text-6xl text-white">Data-Mail Inc.</h1>
-        <img src="./logo-whiteBG.png" class="ml-12">
+        <div class="flex justify-start items-center bg-white w-1/3 ml-10 rounded-3xl">
+            <img class="ml-10 mr-10" src="./logo-whiteBG.png">
+            <h1 class="text-6xl dark-blue-text">Data-Mail Inc.</h1>
+            
+        </div>
         <div class="flex flex-col absolute right-20 dm-sans-light">
             <div class="text-white text-right text-2xl">240 Hartford Ave., Newington, CT 06111</div>
             <div class="text-white text-right text-2xl">860-666-0399</div>
@@ -35,7 +38,7 @@
         <div class="flex justify-center h-[35vh]">
             
             <div class="flex flex-col items-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
-                <img class="absolute top-80 left-40" src="bulletin_images/join_the_team.gif" style="height: 100px;">
+                <img class="absolute top-80 left-60" src="bulletin_images/join_the_team.gif" style="height: 100px;">
                 <div
                     class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-12 mt-2 text-3xl ">
                     Hiring Now!!
@@ -49,10 +52,7 @@
                     Weather
                 </div>
                 <div class="flex mt-1 items-center ">
-                    <video width="180" height="180" autoplay loop>
-                        <source src="./bulletin_images/Clear sky.mp4" type="video/mp4" id="CurrentIcon">
-                        Your browser does not support the video tag.
-                    </video>
+                        <img source src="./bulletin_images/Clear sky.webp"  id="CurrentIcon" style="height: 180px;">
                     <p class="text-6xl" id="CurrentTemp">42&deg;F</p>
                     <div class="flex flex-col items-center ml-32">
                         <p class="text-3xl text-red-600" id="CurrentMax">42&deg;F</p>
@@ -61,28 +61,19 @@
                 </div>
                 <div class="flex items-center justify-between w-4/5 h-1/2">
                     <p id="Day1Label">Sat: </p>
-                    <video width="100" height="100" autoplay loop class="-ml-4">
-                        <source src="./bulletin_images/Clear sky.mp4" type="video/mp4" id="TomorrowIcon">
-                        Your browser does not support the video tag.
-                    </video>
+                    <img source src="./bulletin_images/Snow.webp"  id="TomorrowIcon" style="height: 120px;">
                     <div class="flex flex-col items-center mr-4">
                         <p class="text-3xl text-red-600" id="TomorrowMax">37&deg;F</p>
                         <p class="text-3xl text-blue-500" id="TomorrowMin">31&deg;F</p>
                     </div>
                     <p id="Day2Label">Sun: </p>
-                    <video width="100" height="100" autoplay loop class="-ml-4">
-                        <source src="./bulletin_images/Snow.mp4" type="video/mp4" id="Day2Icon">
-                        Your browser does not support the video tag.
-                    </video>
+                    <img source src="./bulletin_images/thunderstorm.webp"  id="Day2Icon" style="height: 120px;">
                     <div class="flex flex-col items-center mr-4">
                         <p class="text-3xl text-red-600" id="Day2Max">40&deg;F</p>
                         <p class="text-3xl text-blue-500" id="Day2Min">35&deg;F</p>
                     </div>
                     <p id="Day3Label">Mon: </p>
-                    <video width="100" height="100" autoplay loop class="-ml-4">
-                        <source src="./bulletin_images/thunderstorm.mp4" type="video/mp4" id="Day3Icon">
-                        Your browser does not support the video tag.
-                    </video>
+                    <img source src="./bulletin_images/Clouds.webp"  id="Day3Icon" style="height: 120px;">
                     <div class="flex flex-col items-center">
                         <p class="text-3xl text-red-600" id="Day3Max">33&deg;F</p>
                         <p class="text-3xl text-blue-500" id="Day3Min">30&deg;F</p>
@@ -98,6 +89,7 @@
                 <div class="flex flex-col items-center mt-20" id="digital-clock-container">
                     <div id="current_date" class="text-3xl"></div>
                     <div id="digital-clock" class="text-7xl neon"></div>
+                    <img src="bulletin_images/underline.webp" class="w-4/5">
                 </div>
             </div>
         </div>
@@ -105,7 +97,7 @@
         <div class="flex justify-center h-1/2">
             <div class="flex flex-col items-center bg-white rounded-2xl w-1/3 mt-12 indie">
                 <div
-                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-12 mt-2 text-3xl ">
+                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-8 mt-2 text-3xl ">
                     Meet Our Leadership!
                 </div>
                 <div class="flex justify-evenly items-center text-white rounded-2xl w-3/4 mt-12 text-4xl ">
@@ -117,47 +109,57 @@
                 </div>
             </div>
 
-            <div class="flex flex-col items-center bg-white rounded-2xl w-2/5 ml-12 mt-12 indie">
+            <div class="flex flex-col items-center bg-slate-200 rounded-2xl w-2/5 ml-12 mt-12 indie">
                 <div
                     class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-12 mt-2 text-3xl ">
                     Important Announcements
                 </div>
-                <div class="mt-6 indie-bold">
+                <div class="mt-6">
                     <ul>
                         <li>
                             <a href="#" contenteditable>
-                                <h2 class="text-3xl">2023 Top Ranked</h2>
-                                <p>By Printing Impressions!</p>
+                                <img class="absolute top-0 left-20 w-8" src="./bulletin_images/pin.png">
+                                <h2 class="text-3xl indie-bold mt-8">2023 Top Ranked</h2>
+                                <p class="text-xl">By Printing Impressions!</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" contenteditable>
-                                <h2 class="text-3xl">We're FSC Certified</h2>
-                                <p>We're committed to sustainability.</p>
+                                <img class="absolute top-0 left-0 w-8" src="./bulletin_images/pin.png" style="filter: hue-rotate(-90deg);">
+                                <h2 class="text-3xl indie-bold mt-8">We're FSC Certified</h2>
+                                <p class="text-xl">We're committed to sustainability.</p>
+                            </a>
+                        </li>
+                        <li class="border-solid border-1 border-black">
+                            <a href="#" contenteditable class="flex flex-col items-center justify-center ">
+                                <img class="absolute top-0 left-20 w-8" src="./bulletin_images/pin.png">
+                                
+                                <img src="bulletin_images/polaroid1.jpg" style="height: 140px; width: 150px;">
+                                <h2 class="text-xl indie-bold ">Gingerbread Champs</h2>
+                                <!-- <p class="text-xl">And local to CT</p> -->
+                            </a>
+                        </li>
+                        <li class="border-solid border-1 border-black">
+                            <a href="#" contenteditable class="flex flex-col items-center justify-center ">
+                                <img class="absolute top-0 -mt-4 left-20 w-8" src="./bulletin_images/pin.png">
+                                
+                                <img src="bulletin_images/polaroid2.jpg" style="height: 150px; width: 150px;">
+                                <h2 class="indie-bold ">Desktop Support Ex. 554</h2>
+                                <!-- <p class="text-xl">And local to CT</p> -->
                             </a>
                         </li>
                         <li>
                             <a href="#" contenteditable>
-                                <h2 class="text-3xl">Family Owned</h2>
-                                <p>And local to CT</p>
+                                <img class="absolute top-0 right-20 w-8" src="./bulletin_images/pin.png" style="filter: hue-rotate(90deg);">
+                                <h2 class="text-3xl indie-bold mt-8">Serving Blue Chip Clients</h2>
+                                <p class="text-xl">Like BJ's, Bank Of America, and Capital One</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" contenteditable>
-                                <h2 class="text-3xl">We've been around...</h2>
-                                <p>for over 50 years!</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" contenteditable>
-                                <h2 class="text-3xl">Serving Blue Chip Clients</h2>
-                                <p>Like BJ's, Bank Of America, and Capital One</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" contenteditable>
-                                <h2 class="text-3xl">With over >500k sq feet</h2>
-                                <p>We have the solutions for you!</p>
+                                <img class="absolute top-0 left-0 w-8" src="./bulletin_images/pin.png" style="filter: hue-rotate(-90deg);">
+                                <h2 class="text-3xl indie-bold mt-8">With over >500k sq feet</h2>
+                                <p class="text-xl">We have the solutions for you!</p>
                             </a>
                         </li>
                     </ul>
@@ -165,7 +167,7 @@
             </div>
 
             <div class="flex flex-col items-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
-                <div class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-20 mt-2 text-3xl ">
+                <div class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-12 mt-2 text-3xl ">
                     Services Offered
                 </div>
 
@@ -173,34 +175,34 @@
                     <div class="scrolling-content">
                         <div class="flex items-center">
                             <img src="bulletin_images/laser.png">
-                            <p class="ml-2">Laser Personalization</p>
+                            <p class="ml-2 text-2xl">Laser Personalization</p>
                         </div>
                         <div class="flex items-center">
-                            <p class="mr-2">Digital Printing</p>
+                            <p class="mr-2 text-2xl">Digital Printing</p>
                             <img src="bulletin_images/printing.png">
                         </div>
                         <div class="flex items-center">
                             <img src="bulletin_images/envelope.png">
-                            <p class="ml-2">Envelope Converting</p>
+                            <p class="ml-2 text-2xl">Envelope Converting</p>
                         </div>
                         <div class="flex items-center">
-                            <p class="mr-2">Paper Procurement</p>
+                            <p class="mr-2 text-2xl">Paper Procurement</p>
                             <img src="bulletin_images/paper.png">
                         </div>
                         <div class="flex items-center">
                             <img src="bulletin_images/Postage.png">
-                            <p class="ml-2">Postage Optimization</p>
+                            <p class="ml-2 text-2xl">Postage Optimization</p>
                         </div>
                         <div class="flex items-center">
-                            <p class="mr-2">Multi-Channel Services</p>
+                            <p class="mr-2 text-2xl">Multi-Channel Services</p>
                             <img src="bulletin_images/MCS.png">
                         </div>
                         <div class="flex items-center">
                             <img src="bulletin_images/cmg.png">
-                            <p class="ml-2">Commingling</p>
+                            <p class="ml-2 text-2xl">Commingling</p>
                         </div>
                         <div class="flex items-center">
-                            <p class="mr-2">Lettershop Services</p>
+                            <p class="mr-2 text-2xl">Lettershop Services</p>
                             <img src="bulletin_images/lettershop.png">
                         </div>
                     </div>

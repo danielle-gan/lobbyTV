@@ -7,14 +7,15 @@
     <title>Data-Mail Squiggly</title>
     <link rel="stylesheet" href="squiggle.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
     <main class="flex">
         <div id="slideshow" class="absolute right-0">
-            <img src="bulletin_images/AndyM.webp" id="img1">
-            <img src="bulletin_images/BruceM.webp" id="img2">
-            <img src="bulletin_images/ScottB.jpg" id="img3">
+            <img src="bulletin_images/AndyM.webp" class="mySlides w3-animate-fading">
+            <img src="bulletin_images/BruceM.webp" class="mySlides w3-animate-fading">
+            <img src="bulletin_images/ScottB.jpg" class="mySlides w3-animate-fading" style="transform: scaleX(-1)">
         </div>
         <div class="flex flex-col grad h-[100vh] w-[60vw] static">
             <h1 class="text-8xl text-white font-bold font-serif m-8">Data-Mail Inc.</h1>
@@ -90,7 +91,7 @@
         </div>
 
     </main>
-
+    <script src="squiggle.js"></script>
     <script src="squiggle time.js"></script>
 </body>
 

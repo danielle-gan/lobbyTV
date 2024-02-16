@@ -134,16 +134,17 @@ ul li:nth-child(6) a{
 }
 
 @keyframes scrollUp {
-  0% {
-    transform: translateY(0);
+  0%, 100% {
+    transform: translateY(2%);
   }
-  100% {
-    transform: translateY(-100%);
+
+  50% {
+    transform: translateY(-70%);
   }
 }
 
 .scrolling-content {
-  display: inline-block;
-white-space: nowrap;
-  animation: scrollUp 8s linear infinite; /* Adjust duration as needed */
+  /* display: inline-block; */
+/* white-space: nowrap; */
+  animation: scrollUp 20s ease-in-out infinite; /* Adjust duration as needed */
 }

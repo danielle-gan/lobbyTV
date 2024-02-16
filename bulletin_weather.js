@@ -32,10 +32,10 @@ iconArr = [tempicon, tomorrowicon, day2icon, day3icon];
 
 
 // html animation divs
-let rain = document.getElementById("rain");
-let sun = document.getElementById("sun");
-let snow = document.getElementById("snow");
-let clouds = document.getElementsByClassName("clouds");
+// let rain = document.getElementById("rain");
+// let sun = document.getElementById("sun");
+// let snow = document.getElementById("snow");
+// let clouds = document.getElementsByClassName("clouds");
 
 fetch(apiURL)
 .then((response) => {
@@ -103,7 +103,7 @@ fetch(apiURL)
     let descs2APIArr = [currentDesc2, tomorrowDesc2, day2Desc2, day3Desc2]
 
     temp.innerHTML = currentTemp + `<span class="font-normal text-4xl">&deg;F</span>`; 
-    animateWeather(currentDesc);
+    // animateWeather(currentDesc);
 
 minArr.forEach((element, index) => {
     element.innerHTML = minsAPIArr[index] + "&deg;F";
@@ -117,7 +117,7 @@ iconArr.forEach((element, index) => {
     if (descs2APIArr[index] == "few clouds") {
       element.src = "./weather_icons/light_clouds.png";
     } else {
-      element.src = "./weather_icons/" + descsAPIArr[index] + ".png";
+      element.src = "./bulletin_images/" + descsAPIArr[index] + ".mp4";
     }
   });
 

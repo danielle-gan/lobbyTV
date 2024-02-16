@@ -1,2 +1,2 @@
-# lobbyTV
-Simple HTML for a lobby TV design
+# Lobby TV
+A Bunch of different lobby TV designs! 

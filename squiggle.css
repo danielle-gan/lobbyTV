@@ -1,0 +1,48 @@
+.grad {
+
+    background: linear-gradient(90deg, rgba(7, 10, 23, 1) 12%, rgba(12, 43, 163, 1) 55%, rgba(71, 107, 244, 1) 100%);
+    --mask:
+        radial-gradient(70.71px at calc(100% - 100.00px) 50%, #000 99%, #0000 101%) 0 calc(50% - 100px)/100% 200px,
+        radial-gradient(70.71px at calc(100% + 50.00px) 50%, #0000 99%, #000 101%) calc(100% - 50px) 50%/100% 200px repeat-y;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+.fun-shadow {
+    box-shadow: rgba(255, 255, 255) 15px 15px,rgba(255, 255, 255, .5) 25px 25px, rgba(255, 255, 255, .3) 35px 35px;
+}
+
+#slideshow {
+    width: 70%;
+    height: 100vh;
+}
+
+#slideshow img {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	animation-name: fade-out;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.slideshow #img1 {
+	animation-delay: 16s;
+}
+.slideshow #img2 {
+	animation-delay: 8s;
+}
+.slideshow #img3 {
+	animation-delay: 0s;
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;	
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}

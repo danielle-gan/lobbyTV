@@ -15,6 +15,7 @@
 #slideshow {
     width: 70%;
     height: 100vh;
+    background-color: rgba(71, 107, 244, 1);
 }
 
 #slideshow img {

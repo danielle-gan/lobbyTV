@@ -1,17 +1,17 @@
   // Get the current date
-  let currentDate = new Date();
+  let date = new Date();
   
   // Get days of the week
-  const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   
 document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < 3; i++) {
         let labelElement = document.getElementById(`Day${i + 1}Label`);
         
-        let nextDayIndex = (currentDate.getDay() + i + 1) % 7;
+        let nextDayIndex = (date.getDay() + i + 1) % 7;
         
         // Update the day label with the first 3 letters of the day
-        labelElement.innerHTML = daysOfWeek[nextDayIndex] + ':';
+        labelElement.innerHTML = days[nextDayIndex] + ':';
       }
 });
 
@@ -68,12 +68,8 @@ function update(t) {
 
 Time();
 
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 const options2 = { weekday: 'long'};
 
 
 document.getElementById("current_date").innerHTML = new Date().toLocaleDateString('en-US', options);
-
-
-document.getElementById("current-day").innerHTML = new Date().toLocaleDateString('en-US', options2);
-

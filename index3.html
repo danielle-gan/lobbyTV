@@ -7,13 +7,12 @@
     <title>Data-Mail Bulletin Board</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./bulletin.js"></script>
-    <link href="bulletin.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Indie+Flower&display=swap"
         rel="stylesheet">
+    <link href="bulletin.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,9 +33,11 @@
         </div>
 
         <div class="flex justify-center h-[35vh]">
+            
             <div class="flex flex-col items-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
+                <img class="absolute top-80 left-40" src="bulletin_images/join_the_team.gif" style="height: 100px;">
                 <div
-                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-1/5 mt-2 text-3xl ">
+                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-12 mt-2 text-3xl ">
                     Hiring Now!!
                 </div>
                 <img src="./hiringQR.png" style="height: 300px;">
@@ -44,7 +45,7 @@
 
             <div class="flex flex-col items-center bg-white rounded-2xl w-2/5 ml-12 mt-12 indie">
                 <div
-                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/3 h-1/8 mt-2 text-3xl ">
+                    class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-12 mt-2 text-3xl ">
                     Weather
                 </div>
                 <div class="flex mt-1 items-center ">
@@ -52,39 +53,39 @@
                         <source src="./bulletin_images/Clear sky.mp4" type="video/mp4" id="CurrentIcon">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="text-6xl" id="CurrentTemp">74&deg;F</p>
+                    <p class="text-6xl" id="CurrentTemp">42&deg;F</p>
                     <div class="flex flex-col items-center ml-32">
-                        <p class="text-3xl text-red-600" id="CurrentMax">74&deg;F</p>
-                        <p class="text-3xl text-blue-500 mt-4" id="CurrentMin">74&deg;F</p>
+                        <p class="text-3xl text-red-600" id="CurrentMax">42&deg;F</p>
+                        <p class="text-3xl text-blue-500 mt-4" id="CurrentMin">31&deg;F</p>
                     </div>
                 </div>
                 <div class="flex items-center justify-between w-4/5 h-1/2">
-                    <p>Sat: </p>
+                    <p id="Day1Label">Sat: </p>
                     <video width="100" height="100" autoplay loop class="-ml-4">
                         <source src="./bulletin_images/Clear sky.mp4" type="video/mp4" id="TomorrowIcon">
                         Your browser does not support the video tag.
                     </video>
                     <div class="flex flex-col items-center mr-4">
-                        <p class="text-3xl text-red-600" id="TomorrowMax">74&deg;F</p>
-                        <p class="text-3xl text-blue-500" id="TomorrowMin">74&deg;F</p>
+                        <p class="text-3xl text-red-600" id="TomorrowMax">37&deg;F</p>
+                        <p class="text-3xl text-blue-500" id="TomorrowMin">31&deg;F</p>
                     </div>
-                    <p>Sun: </p>
+                    <p id="Day2Label">Sun: </p>
                     <video width="100" height="100" autoplay loop class="-ml-4">
                         <source src="./bulletin_images/Snow.mp4" type="video/mp4" id="Day2Icon">
                         Your browser does not support the video tag.
                     </video>
                     <div class="flex flex-col items-center mr-4">
-                        <p class="text-3xl text-red-600" id="Day2Max">74&deg;F</p>
-                        <p class="text-3xl text-blue-500" id="Day2Min">74&deg;F</p>
+                        <p class="text-3xl text-red-600" id="Day2Max">40&deg;F</p>
+                        <p class="text-3xl text-blue-500" id="Day2Min">35&deg;F</p>
                     </div>
-                    <p>Mon: </p>
+                    <p id="Day3Label">Mon: </p>
                     <video width="100" height="100" autoplay loop class="-ml-4">
                         <source src="./bulletin_images/thunderstorm.mp4" type="video/mp4" id="Day3Icon">
                         Your browser does not support the video tag.
                     </video>
                     <div class="flex flex-col items-center">
-                        <p class="text-3xl text-red-600" id="Day3Max">74&deg;F</p>
-                        <p class="text-3xl text-blue-500" id="Day3Min">74&deg;F</p>
+                        <p class="text-3xl text-red-600" id="Day3Max">33&deg;F</p>
+                        <p class="text-3xl text-blue-500" id="Day3Min">30&deg;F</p>
                     </div>
                 </div>
             </div>
@@ -107,11 +108,11 @@
                     class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-12 mt-2 text-3xl ">
                     Meet Our Leadership!
                 </div>
-                <div class="flex justify-evenly items-center text-white rounded-2xl w-3/4 mt-8 text-4xl ">
-                    <img class="rounded-2xl" src="./bulletin_images/AndyM.webp">
+                <div class="flex justify-evenly items-center text-white rounded-2xl w-3/4 mt-12 text-4xl ">
+                    <img id="rotating-img"class="rounded-2xl" src="./bulletin_images/AndyM.webp">
                     <div class="flex flex-col text-black items-evenly ml-3">
-                        <h2>Andy Mandell</h2>
-                        <h3 class="text-2xl mt-8">Founder, Owner</h3>
+                        <h2 id="rotating-header">Andy Mandell</h2>
+                        <h3 id="rotating-header2" class="text-2xl mt-8">Founder, Owner</h3>
                     </div>
                 </div>
             </div>
@@ -121,42 +122,42 @@
                     class="flex justify-center items-center dark-blue text-white rounded-2xl w-1/2 h-12 mt-2 text-3xl ">
                     Important Announcements
                 </div>
-                <div class="mt-6">
+                <div class="mt-6 indie-bold">
                     <ul>
                         <li>
                             <a href="#" contenteditable>
-                                <h2>Title #1</h2>
-                                <p>Text Content #1</p>
+                                <h2 class="text-3xl">2023 Top Ranked</h2>
+                                <p>By Printing Impressions!</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" contenteditable>
-                                <h2>Title #2</h2>
-                                <p>Text Content #2</p>
+                                <h2 class="text-3xl">We're FSC Certified</h2>
+                                <p>We're committed to sustainability.</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" contenteditable>
-                                <h2>Title #3</h2>
-                                <p>Text Content #3</p>
+                                <h2 class="text-3xl">Family Owned</h2>
+                                <p>And local to CT</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" contenteditable>
-                                <h2>Title #4</h2>
-                                <p>Text Content #4</p>
+                                <h2 class="text-3xl">We've been around...</h2>
+                                <p>for over 50 years!</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" contenteditable>
-                                <h2>Title #5</h2>
-                                <p>Text Content #5</p>
+                                <h2 class="text-3xl">Serving Blue Chip Clients</h2>
+                                <p>Like BJ's, Bank Of America, and Capital One</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" contenteditable>
-                                <h2>Title #6</h2>
-                                <p>Text Content #6</p>
+                                <h2 class="text-3xl">With over >500k sq feet</h2>
+                                <p>We have the solutions for you!</p>
                             </a>
                         </li>
                     </ul>
@@ -164,7 +165,7 @@
             </div>
 
             <div class="flex flex-col items-center bg-white rounded-2xl w-1/6  ml-12 mt-12 indie">
-                <div class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-12 mt-2 text-3xl ">
+                <div class="flex justify-center items-center dark-blue text-white rounded-2xl w-60 h-20 mt-2 text-3xl ">
                     Services Offered
                 </div>
 
@@ -211,6 +212,7 @@
     </main>
     <!-- <script src="bulletin_weather.js"> </script> -->
     <script src="time.js"> </script>
+    <script src="bulletin_slideshow.js"> </script>
 </body>
 
 </html>

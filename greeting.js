@@ -12,21 +12,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-      // Update day labels
-  for (let i = 0; i < 3; i++) {
-    let labelElement = document.getElementById(`Day${i + 1}Label`);
-    
-    // Calculate the index for the next day in the daysOfWeek array
-    let nextDayIndex = (currentDate.getDay() + i + 1) % 7;
-    
-    // Update the day label with the first 3 letters of the day
-    labelElement.innerHTML = daysOfWeek[nextDayIndex] + ':';
-  }
 });
-
-  // Get the current date
-  let currentDate = new Date();
-  
-  // Get days of the week
-  const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-  

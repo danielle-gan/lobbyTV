@@ -9,7 +9,7 @@
 }
 
 .fun-shadow {
-    box-shadow: rgba(255, 255, 255) 15px 15px,rgba(255, 255, 255, .5) 25px 25px, rgba(255, 255, 255, .3) 35px 35px;
+    box-shadow: rgba(255, 255, 255) 15px 15px, rgba(255, 255, 255, .5) 25px 25px, rgba(255, 255, 255, .3) 35px 35px;
 }
 
 #slideshow {
@@ -19,7 +19,25 @@
 }
 
 #slideshow img {
-	position: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
 }
+
+.myHeaders {
+    visibility: hidden;
+    transform: translateX(-1000%);
+    transition: opacity 1s, transform 1s, visibility 0s 1s;
+  }
+
+  .slideInFromLeft {
+    visibility: visible;
+    transform: translateX(0);
+    transition: opacity 1s, transform 1s, visibility 0s;
+  }
+
+  .slideOutToLeft {
+    visibility: hidden;
+    transform: translateX(-1000%);
+    transition: opacity 1s, transform 1s, visibility 0s 1s;
+  }

@@ -15,13 +15,16 @@ function carousel() {
 }
 
 function carouselheaders() {
-    var i;
-    var x = document.getElementsByClassName("myHeaders");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+    var headers = document.getElementsByClassName("myHeaders");
+    for (var i = 0; i < headers.length; i++) {
+      headers[i].classList.remove("slideInFromLeft");
+      headers[i].classList.remove("slideOutToLeft");
+  
+      // Check if the corresponding carousel image is displayed
+      if (i === myIndex-1) {
+        headers[i].classList.add("slideInFromLeft");
+      } else {
+        headers[i].classList.add("slideOutToLeft");
+      }
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 9000);    
-  }
+}

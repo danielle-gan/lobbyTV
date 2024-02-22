@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plain Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <main>
         <!-- Two Column Layout -->
         <!-- Column 1 (4 rows) -->
-            <!-- row 1 = logo image, flex center -->
-            <!-- row 2 = time | date, flex center -->
-            <!-- row 3 = box -->
-            <!-- row 4 = box the same size as row 3's box -->
+        <!-- row 1 = logo image, flex center -->
+        <!-- row 2 = time | date, flex center -->
+        <!-- row 3 = box -->
+        <!-- row 4 = box the same size as row 3's box -->
         <!-- Column 2 (3 rows) -->
-            <!-- row 1 main slideshow-->
-            <!-- row 2 mini pics with text (2 columns of  1. picture + 2. HeaderText + Caption Text )  -->
-            <!--  -->
-        </main>
+        <!-- row 1 main slideshow-->
+        <!-- row 2 mini pics with text (2 columns of  1. picture + 2. HeaderText + Caption Text )  -->
+        <!--  -->
+
+        <div class="flex mt-12">
+            <div class="flex flex-col w-2/5">
+                <div class = "flex justify-center">
+                    <img src="logo.png">
+                </div>
+                <div class="flex justify-center h-1/8 bg-blue-400 text-2xl p-2 mt-12">
+                    4:23 PM | Friday, February 23rd, 2024
+                </div>
+                <div class="flex justify-center items-center border-2 border-gray-500 h-[35vh] mt-4 mx-8">
+                    <ul class="text-center">
+                        <li class="my-4">
+                            <h2 class="text-4xl">Header1</h2>
+                            <h3 class="text-2xl">Caption1</h3>
+                        </li>
+                        <li class="my-4">
+                            <h2 class="text-4xl">Header2</h2>
+                            <h3 class="text-2xl">Caption2</h3>
+                        </li>
+                        <li class="my-4">
+                            <h2 class="text-4xl">Header3</h2>
+                            <h3 class="text-2xl">Caption3</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-center items-center border-2 border-black h-[35vh] mt-4 mx-8 bg-black text-white">
+                    <ul class="text-center ">
+                        <li class="my-4">
+                            <h2 class="text-4xl">Header1</h2>
+                            <h3 class="text-2xl">Caption1</h3>
+                        </li>
+                        <li class="my-4">
+                            <h2 class="text-4xl">Header2</h2>
+                            <h3 class="text-2xl">Caption2</h3>
+                        </li>
+                        <li class="my-4">
+                            <h2 class="text-4xl">Header3</h2>
+                            <h3 class="text-2xl">Caption3</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col w-3/5 h-[80vh] mr-6 bg-gray-500">
+                <div class = "flex justify-center w-[100%] h-[80%]">
+                    <img src="./bulletin_images/AndyM.webp" class="w-[100%]">
+                </div>
+                <div class = "flex justify-evenly items-center h-[20%]">
+                    <img src="./bulletin_images/BruceM.webp" class="w-[30%] h-[90%]">
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl text-white text-bold">Test</h2>
+                        <h3 class="text-l text-white">Test</h3>
+                    </div>
+                    <img src="./bulletin_images/ScottB.jpg" class="w-[30%] h-[90%]">
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl text-white text-bold">Test</h2>
+                        <h3 class="text-l text-white">Test</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
     <footer>
         <!-- This will be a fun facts ticker -->
     </footer>
 </body>
+
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plain Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="plain.css">
 </head>
 
 <body>
@@ -23,59 +24,94 @@
 
         <div class="flex mt-12">
             <div class="flex flex-col w-2/5">
-                <div class = "flex justify-center">
+                <div class="flex justify-center">
                     <img src="logo.png">
                 </div>
-                <div class="flex justify-center h-1/8 bg-blue-400 text-2xl p-2 mt-12">
+                <div class="flex justify-center h-1/8 bg-blue-400 text-3xl p-2 mt-12">
                     4:23 PM | Friday, February 23rd, 2024
                 </div>
-                <div class="flex justify-center items-center border-2 border-gray-500 h-[35vh] mt-4 mx-8">
+                <div class="flex justify-center items-center border-2 border-gray-500 h-[35vh] mt-4 mx-8 gray-lines">
                     <ul class="text-center">
-                        <li class="my-4">
-                            <h2 class="text-4xl">Header1</h2>
-                            <h3 class="text-2xl">Caption1</h3>
+                        <li class="mb-4">
+                            <p class="text-l font-bold">February 29th, 2024</p>
+                            <p class="text-4xl text-red-500 font-bold"> Pretend Meeting Placeholder</p>
+                            <p class="text-xl">Main Conference Room</p>
                         </li>
-                        <li class="my-4">
-                            <h2 class="text-4xl">Header2</h2>
-                            <h3 class="text-2xl">Caption2</h3>
-                        </li>
-                        <li class="my-4">
-                            <h2 class="text-4xl">Header3</h2>
-                            <h3 class="text-2xl">Caption3</h3>
-                        </li>
+                        <li class="mb-4">
+                            <p class="text-l font-bold">May 27th, 2024</p>
+                            <p class="text-4xl text-red-500 font-bold">Memorial Day</p>
+                            <p class="text-xl">A day of reflection, gratitude, and solem remembrance.</p>
+                        </li class="mt-4">
+                        <p class="text-l font-bold">September 2nd, 2024</p>
+                        <p class="text-4xl text-red-500 font-bold">Office Olympics</p>
+                        <p class="text-xl">Come together for team-building and memorable moments!</p>
                     </ul>
                 </div>
-                <div class="flex justify-center items-center border-2 border-black h-[35vh] mt-4 mx-8 bg-black text-white">
-                    <ul class="text-center ">
-                        <li class="my-4">
-                            <h2 class="text-4xl">Header1</h2>
-                            <h3 class="text-2xl">Caption1</h3>
-                        </li>
-                        <li class="my-4">
-                            <h2 class="text-4xl">Header2</h2>
-                            <h3 class="text-2xl">Caption2</h3>
-                        </li>
-                        <li class="my-4">
-                            <h2 class="text-4xl">Header3</h2>
-                            <h3 class="text-2xl">Caption3</h3>
-                        </li>
-                    </ul>
+                <div
+                    class="flex justify-evenly items-center border-2 border-black h-[35vh] mt-4 mx-8 bg-black text-white">
+                    <div class="flex flex-col justify-center text-center w-[30%]">
+                        <img src="./StaticWeatherIcons/Clear sky.png" class="self-center w-[70%]">
+                        <div class="text-3xl">35 &degF </div>
+                        <div class="flex justify-between text-2xl mt-4">
+                            <div>26 &degF</div>
+                            <div>37 &degF</div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center w-[50%] h-[100%]">
+                        <div class="flex h-[100%] flex-col justify-evenly">
+                            <p>Sat:</p>
+                            <p>Sun:</p>
+                            <p>Mon:</p>
+                        </div>
+                        <div class="flex h-[100%] flex-col justify-evenly ml-4 -mt-2">
+                            <img src="./StaticWeatherIcons/Clouds.png" class="self-center w-[70%]">
+                            <div class="flex justify-between">
+                                <div>39 &degF</div>
+                                <div>42 &degF</div>
+                            </div>
+                            <img src="./StaticWeatherIcons/Thunderstorm.png" class="self-center w-[70%]">
+                            <div class="flex justify-between">
+                                <div>33 &degF</div>
+                                <div>37 &degF</div>
+                            </div>
+                            <img src="./StaticWeatherIcons/Snow.png" class="self-center w-[70%]">
+                            <div class="flex justify-between ">
+                                <div>15 &degF</div>
+                                <div>24 &degF</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col w-3/5 h-[80vh] mr-6 bg-gray-500">
-                <div class = "flex justify-center w-[100%] h-[80%]">
-                    <img src="./bulletin_images/AndyM.webp" class="w-[100%]">
-                </div>
-                <div class = "flex justify-evenly items-center h-[20%]">
-                    <img src="./bulletin_images/BruceM.webp" class="w-[30%] h-[90%]">
-                    <div class="flex flex-col">
-                        <h2 class="text-2xl text-white text-bold">Test</h2>
-                        <h3 class="text-l text-white">Test</h3>
+            <div class="flex flex-col w-3/5 h-[80vh]">
+                <div class="flex flex-col h-[80vh] mr-6 bg-stone-700">
+                    <div class="flex justify-center w-[100%] h-[80%]">
+                        <img src="./bulletin_images/AndyM.webp" class="w-[100%]" id="main-img">
                     </div>
-                    <img src="./bulletin_images/ScottB.jpg" class="w-[30%] h-[90%]">
-                    <div class="flex flex-col">
-                        <h2 class="text-2xl text-white text-bold">Test</h2>
-                        <h3 class="text-l text-white">Test</h3>
+                    <div class="flex flex-col justify-center absolute bg-stone-500 w-[30%] h-[20%] top-[45vh] bg-opacity-80 pl-2" id="main-caption"> 
+                        <h2 class="text-4xl text-white font-bold" id="main-title">Data Driven</h2>
+                        <h3 class="text-l text-white" id="main-text">Strategize with confidence and precision – we are a data-driven powerhouse. Unlock insights, make informed decisions, and propel your success forward. At the intersection of innovation and analytics, we transform raw data into actionable intelligence, guiding your business toward unparalleled growth and efficiency</h3> 
+                    </div>
+                    <div class="flex justify-evenly items-center h-[20%]">
+                        <div class="flex justify-center items-center h-[100%] w-[45%]">
+                            <img src="./bulletin_images/BruceM.webp" class="w-[35%] h-[90%]">
+                            <div class="flex flex-col justify-start h-[100%] ml-2 w-[70%]">
+                                <h2 class="text-2xl text-white font-bold">Family Owned</h2>
+                                <h3 class="text-sm text-white">Rooted in tradition, thriving through generations – a testament to the strength and unity of a family-owned business. Our commitment to quality and personalized service has been passed down with care, creating a legacy that continues to grow and evolve.</h3>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center h-[100%] w-[45%]">
+                        <img src="./bulletin_images/ScottB.jpg" class="w-[35%] h-[90%]">
+                        <div class="flex flex-col justify-start w-[70%] h-[100%] ml-2">
+                            <h2 class="text-2xl text-white font-bold">Customer Focused</h2>
+                            <h3 class="text-sm text-white">Elevating excellence by serving world-class blue-chip businesses. Our commitment to precision, innovation, and top-tier service sets us apart. Join hands with a partner dedicated to exceeding the standards of the best, because your success deserves nothing less.</h3>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center bg-blue-500 mt-12 -ml-8 h-1/3">
+                    <div class="flex justify-center items-center bg-red-500 text-white text-4xl h-[200%] z-10 px-4" id="welcome">
+                        Welcome to Data-Mail, We're so happy to have you!
                     </div>
                 </div>
             </div>
@@ -85,6 +121,8 @@
     <footer>
         <!-- This will be a fun facts ticker -->
     </footer>
+
+    <script src="./plain.js"></script>
 </body>
 
 </html>

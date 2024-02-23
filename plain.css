@@ -1,0 +1,56 @@
+@keyframes moveX {
+    0% {
+      transform: translateX(-20px);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(-20px);
+    }
+  }
+
+  #welcome {
+    animation: moveX 4s infinite ease-in-out;
+  }
+
+  .gray-lines {
+    background-image: url(./gray-lines.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: .8
+  }
+
+
+ @keyframes shrinkX {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+      100% {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+ }
+
+
+ @keyframes shrinkXRight {
+  0% {
+      transform: scaleX(0);
+      transform-origin: right;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: right;
+    }
+}
+
+
+.shrink-animation {
+  animation: shrinkX 1s;
+} 
+
+
+.shrink-right-animation {
+  animation: shrinkXRight 1s;
+}

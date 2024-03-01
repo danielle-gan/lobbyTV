@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="background.css">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="neon.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="greeting.js"></script>
 
@@ -30,24 +30,24 @@
                 </div>
             </div>
             <div class="flex justify-center items-center z-10 text-white text-2xl opacity-100">
-                <p class="z-10 text-white text-3xl opacity-100 mt-8 satisfy" id="greeting-link">We are so happy to have you!</p>
+                <p class="z-10 text-white text-3xl opacity-100 mt-2 satisfy" id="greeting-link">We are so happy to have you!</p>
             </div>
             <div class="flex justify-center">
                 <div class="grid items-center">
 
-                    <div class="Rotating-Images flex flex-col items-center">
-                        <h2 class="text-white text-4xl font-bold satisfy mb-8" id="rotating-header">2024 Color Of The Year</h2>
-                        <img src="./slideshow_images/pantone.jpg" alt="pantone color of the year" id="rotating-img">
+                    <div class="Rotating-Images flex flex-col items-center h-[100%]">
+                        <h2 class="text-white text-3xl font-bold satisfy" id="rotating-header">2024 Color Of The Year</h2>
+                        <img src="./slideshow_images/pantone.jpg" alt="pantone color of the year" id="rotating-img" class="h-[80%]">
                     </div>
 
-                    <div class="Time ">
-                        <div id="digital-clock-container">
-                            <div id="current_date" class="text-4xl neon"></div>
-                            <div id="digital-clock" class="opacity-100 neon"></div>
+                    <div class="Time h-[100%]">
+                        <div id="digital-clock-container" class="flex flex-col items-center justify-center h-[100%]">
+                            <div id="current_date" class="text-2xl neon"></div>
+                            <div id="digital-clock" class=" text-6xl opacity-100 neon"></div>
                         </div>
                     </div>
 
-                    <div class="Weather bg-black comfortaa" >
+                    <div class="Weather bg-black comfortaa h-[100%]" >
                         <div id="snow"></div>
                         <div id="rain"></div>
                         <div id="sun"></div>
@@ -58,59 +58,59 @@
                             <path id="cloud-icon" d="M406.1 227.63c-8.23-103.65-144.71-137.8-200.49-49.05 -36.18-20.46-82.33 3.61-85.22 45.9C80.73 229.34 50 263.12 50 304.1c0 44.32 35.93 80.25 80.25 80.25h251.51c44.32 0 80.25-35.93 80.25-80.25C462 268.28 438.52 237.94 406.1 227.63z"/>
                         </svg>
                         <div class="flex justify-center">
-                            <img src="./weather_icons/Clear.png" width="150" id="CurrentIcon">
+                            <img src="./weather_icons/Clear.png" width="110" id="CurrentIcon">
                         </div>
                         <div class="flex justify-center">
-                            <p class="text-white text-7xl neon font-bold" id="CurrentTemp">
-                                32<span class="font-normal text-4xl">&deg;F</span>
+                            <p class="text-white text-4xl  font-bold" id="CurrentTemp">
+                                32<span class="font-normal text-2xl">&deg;F</span>
                             </p>
                         </div>
-                        <div class="flex justify-between mt-8 border-b-2 border-white">
-                            <p class="text-cyan-300 text-3xl" id="CurrentMin">
+                        <div class="flex justify-between border-b-2 border-white">
+                            <p class="text-cyan-300 text-2xl" id="CurrentMin">
                                 Lo 28&deg;F
                             </p>
-                            <p class="text-red-400 text-3xl" id="CurrentMax">
+                            <p class="text-red-400 text-2xl" id="CurrentMax">
                                 Hi 34&deg;F
                             </p>
                         </div>
                         <div class="flex justify-start items-center">
                             <div class="text-white mr-8 w-4 day-label" id="Day1Label">Thu:</div>
-                            <div><img src="./weather_icons/Clouds.png" id="TomorrowIcon"></div>
+                            <div><img src="./weather_icons/Clouds.png" id="TomorrowIcon" width="70"></div>
                             <div class="ml-12" >
-                                <p class="text-cyan-300 text-2xl" id="TomorrowMin">
+                                <p class="text-cyan-300 text-l" id="TomorrowMin">
                                     Lo 28&deg;F
                                 </p>
                             </div>
                             <div class="ml-12">
-                                <p class="text-red-400 text-2xl" id="TomorrowMax">
+                                <p class="text-red-400 text-l" id="TomorrowMax">
                                     Hi 39&deg;F
                                 </p>
                             </div>
                         </div>
                         <div class="flex justify-start items-center">
                             <div class="text-white mr-8 w-4 day-label" id="Day2Label">Fri:</div>
-                            <div class="just"><img src="./weather_icons/Thunderstorm.png" id="Day2Icon"></div>
+                            <div class="just"><img src="./weather_icons/Thunderstorm.png" id="Day2Icon" width="70"></div>
                             <div class="ml-12">
-                                <p class="text-cyan-300 text-2xl" id="Day2Min">
+                                <p class="text-cyan-300 text-l" id="Day2Min">
                                     Lo 37&deg;F
                                 </p>
                             </div>
                             <div class="ml-12">
-                                <p class="text-red-400 text-2xl" id="Day2Max">
+                                <p class="text-red-400 text-l" id="Day2Max">
                                     Hi 49&deg;F
                                 </p>
                             </div>
                         </div>
                         <div class="flex justify-start items-center">
                             <div class="text-white mr-8 w-4 day-label" id="Day3Label">Sat:</div>
-                            <div><img src="./weather_icons/light_clouds.png" id="Day3Icon"></div>
+                            <div><img src="./weather_icons/light_clouds.png" id="Day3Icon" width="70"></div>
                             <div class="ml-12">
-                                <p class="text-cyan-300 text-2xl" id="Day3Min">
+                                <p class="text-cyan-300 text-l" id="Day3Min">
                                     Lo 48&deg;F
                                 </p>
                             </div>
                             <div class="ml-12">
-                                <p class="text-red-400 text-2xl" id="Day3Max">
+                                <p class="text-red-400 text-l" id="Day3Max">
                                     Hi 64&deg;F
                                 </p>
                             </div>

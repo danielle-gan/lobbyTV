@@ -1,10 +1,7 @@
 
 
 #digital-clock-container {
-    padding-top: 5%;
     color: #f3f3f3;
-    margin-left: auto;
-    margin-right: auto;
     font-family: 'Inter', sans-serif;
     font-size: 80px;
     text-align: center;
@@ -20,11 +17,12 @@
     margin-top: 1%;
     display: grid;
     width: 70%;
-    height: 800px;
+    height: 600px;
     grid-template-columns: 1.4fr 0.7fr;
     grid-template-rows: 0.7fr 1fr 1fr;
     gap: 0% 4%;
     grid-auto-flow: row;
+    grid-row-gap: 10px;
     /* background-color: rgba(255, 255, 255, 0.6); */
     grid-template-areas:
         "Rotating-Images Time"
@@ -43,7 +41,7 @@
     0 0 21px #fff,
     0 0 42px rgb(0, 174, 255),
     0 0 92px rgb(0, 174, 255);
-    padding: 1%;
+    /* padding: 1%; */
     background-color: black;
     height: 785px;
     position:relative;

@@ -30,8 +30,8 @@
                 <div class="flex justify-center">
                     <img src="weblogo.png">
                 </div>
-                <div class="flex justify-center h-1/8 bg-blue-400 text-4xl p-2 mt-12 barlow-condensed-light">
-                    4:23 PM | Friday, February 23rd, 2024
+                <div class="flex justify-evenly h-1/8 bg-blue-400 text-4xl p-2 mt-12 barlow-condensed-light">
+                    <div id="digital-clock">4:23 PM </div> | <div id="current_date">Friday, February 23rd, 2024</div>
                 </div>
                 <div class="flex justify-center items-center border-2 border-gray-500 h-[35vh] mt-4 mx-8 gray-lines">
                     <ul class="text-center">
@@ -53,34 +53,34 @@
                 <div
                     class="flex justify-evenly items-center border-2 border-black h-[35vh] mt-4 mx-8 bg-black text-white">
                     <div class="flex flex-col justify-center text-center w-[30%]">
-                        <img src="./StaticWeatherIcons/Clear sky.png" class="self-center w-[70%]">
-                        <div class="text-3xl">35 &degF </div>
+                        <img src="./StaticWeatherIcons/Clear.png" class="self-center w-[70%]" id="CurrentIcon">
+                        <div class="text-3xl" id="CurrentTemp">35 &degF </div>
                         <div class="flex justify-between text-2xl mt-4">
-                            <div>26 &degF</div>
-                            <div>37 &degF</div>
+                            <div id="CurrentMin">26 &degF</div>
+                            <div id="CurrentMax">37 &degF</div>
                         </div>
                     </div>
                     <div class="flex justify-center w-[50%] h-[100%]">
                         <div class="flex h-[100%] flex-col justify-evenly">
-                            <p>Sat:</p>
-                            <p>Sun:</p>
-                            <p>Mon:</p>
+                            <p id="Day1Label">Sat:</p>
+                            <p id="Day2Label">Sun:</p>
+                            <p id="Day3Label">Mon:</p>
                         </div>
                         <div class="flex h-[100%] flex-col justify-evenly ml-4 -mt-2">
-                            <img src="./StaticWeatherIcons/Clouds.png" class="self-center w-[70%]">
+                            <img src="./StaticWeatherIcons/Clouds.png" class="self-center w-[70%]" id="TomorrowIcon">
                             <div class="flex justify-between">
-                                <div>39 &degF</div>
-                                <div>42 &degF</div>
+                                <div id="TomorrowMin">39 &degF</div>
+                                <div id="TomorrowMax">42 &degF</div>
                             </div>
-                            <img src="./StaticWeatherIcons/Thunderstorm.png" class="self-center w-[70%]">
+                            <img src="./StaticWeatherIcons/Thunderstorm.png" class="self-center w-[70%]" id="Day2Icon">
                             <div class="flex justify-between">
-                                <div>33 &degF</div>
-                                <div>37 &degF</div>
+                                <div id="Day2Min">33 &degF</div>
+                                <div id="Day2Max">37 &degF</div>
                             </div>
-                            <img src="./StaticWeatherIcons/Snow.png" class="self-center w-[70%]">
+                            <img src="./StaticWeatherIcons/Snow.png" class="self-center w-[70%]" id="Day3Icon">
                             <div class="flex justify-between ">
-                                <div>15 &degF</div>
-                                <div>24 &degF</div>
+                                <div id="Day3Min">15 &degF</div>
+                                <div id="Day3Max">24 &degF</div>
                             </div>
                         </div>
                     </div>
@@ -124,8 +124,9 @@
     <footer>
         <!-- This will be a fun facts ticker -->
     </footer>
-
+    <!-- <script src="plain_weather.js"> </script> -->
     <script src="./plain.js"></script>
+    <script src="./time.js"></script>
 </body>
 
 </html>

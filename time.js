@@ -70,10 +70,12 @@ Time();
 
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 const options2 = { weekday: 'long'};
-
+const options3 = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
 
 document.getElementById("current_date").innerHTML = new Date().toLocaleDateString('en-US', options);
 
 
 document.getElementById("current-day").innerHTML = new Date().toLocaleDateString('en-US', options2);
+
+document.getElementById("current-date").innerHTML = new Date().toLocaleDateString('en-US', options3);
 

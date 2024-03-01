@@ -81,7 +81,7 @@ ul li:nth-child(2) a{
   background:#cfc;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-top: 1rem;
+  margin-top: .5rem;
   animation-delay: 10s;
 }
 ul li:nth-child(3) a{
@@ -95,7 +95,7 @@ ul li:nth-child(4) a{
   transform:rotate(3deg); 
   background:#fff;
   margin-left: 5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   animation-delay: 30s;
 }
 ul li:nth-child(5) a{

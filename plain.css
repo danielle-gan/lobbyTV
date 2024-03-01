@@ -11,7 +11,7 @@
   }
 
   #welcome {
-    animation: moveX 4s infinite ease-in-out;
+    animation: moveX 5s infinite ease-in-out;
   }
 
   .gray-lines {
@@ -58,17 +58,17 @@
 
 
 .fade-in-animation {
-  animation: fadein 1s;
+  animation: fadein 1s ease-in;
 }
 
 
 .shrink-animation {
-  animation: shrinkX 1s;
+  animation: shrinkX 1s ease-in;
 } 
 
 
 .shrink-right-animation {
-  animation: shrinkXRight 1s;
+  animation: shrinkXRight 1s ease-in;
 }
 
 

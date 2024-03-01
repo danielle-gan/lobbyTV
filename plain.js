@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
     const texts = [
-      { title: "Data Driven", text: "Strategize with confidence and precision – we are a data-driven powerhouse. Unlock insights, make informed decisions, and propel your success forward. At the intersection of innovation and analytics, we transform raw data into actionable intelligence, guiding your business toward unparalleled growth and efficiency.", src:"./bulletin_images/AndyM.webp" },
-      { title: "Family Owned", text: "Rooted in tradition, thriving through generations – a testament to the strength and unity of a family-owned business. Our commitment to quality and personalized service has been passed down with care, creating a legacy that continues to grow and evolve.", src:"./bulletin_images/BruceM.webp" },
-      { title: "Customer Focused", text: "Elevating excellence by serving world-class blue-chip businesses. Our commitment to precision, innovation, and top-tier service sets us apart. Join hands with a partner dedicated to exceeding the standards of the best, because your success deserves nothing less.", src:"./bulletin_images/ScottB.jpg" }
+      { title: "Data Driven", text: "Strategize with confidence and precision – we are a data-driven powerhouse. Unlock insights, make informed decisions, and propel your success forward. We transform raw data into actionable intelligence, guiding your business toward unparalleled growth and efficiency.", src:"./stock_imgs/data-driven.jpg" },
+      { title: "Family Owned", text: "Rooted in tradition, thriving through generations – a testament to the strength and unity of a family-owned business. Our commitment to quality and personalized service has been passed down with care, creating a legacy that continues to grow and evolve.", src:"./stock_imgs/family-owned.jpg" },
+      { title: "Customer Focused", text: "Elevating excellence by serving world-class blue-chip businesses. Our commitment to precision, innovation, and top-tier service sets us apart. Join hands with a partner dedicated to exceeding the standards of the best, because your success deserves nothing less.", src:"./stock_imgs/customer-focused.jpg"}
     ];
 
     let index = 0;

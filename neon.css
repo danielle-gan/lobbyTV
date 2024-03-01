@@ -168,9 +168,9 @@
   #sun {
     z-index: -1;
     position: absolute;
-    margin-left: -43px;
-    width: 532px;
-    height: 578px;
+    margin-left: -35px;
+    width: 425px;
+    height: 438px;
     animation: animatedSun 15s infinite;
     display: none;
   }

@@ -115,9 +115,9 @@ maxArr.forEach((element, index) => {
 
 iconArr.forEach((element, index) => {
     if (descs2APIArr[index] == "few clouds") {
-      element.src = "./weather_icons/light_clouds.png";
+      element.src = "./neon_weather_icons/light_clouds.png";
     } else {
-      element.src = "./weather_icons/" + descsAPIArr[index] + ".png";
+      element.src = "./neon_weather_icons/" + descsAPIArr[index] + ".png";
     }
   });
 

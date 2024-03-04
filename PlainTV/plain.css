@@ -10,7 +10,7 @@
     }
   }
 
-  #welcome {
+  #greeting-link {
     animation: moveX 5s infinite ease-in-out;
   }
 

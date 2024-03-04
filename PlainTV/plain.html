@@ -14,21 +14,11 @@
 
 <body>
     <main>
-        <!-- Two Column Layout -->
-        <!-- Column 1 (4 rows) -->
-        <!-- row 1 = logo image, flex center -->
-        <!-- row 2 = time | date, flex center -->
-        <!-- row 3 = box -->
-        <!-- row 4 = box the same size as row 3's box -->
-        <!-- Column 2 (3 rows) -->
-        <!-- row 1 main slideshow-->
-        <!-- row 2 mini pics with text (2 columns of  1. picture + 2. HeaderText + Caption Text )  -->
-        <!--  -->
 
         <div class="flex mt-12">
             <div class="flex flex-col w-2/5">
                 <div class="flex justify-center">
-                    <img src="weblogo.png">
+                    <img src="../weblogo.png">
                 </div>
                 <div class="flex justify-evenly h-1/8 bg-blue-400 text-4xl p-2 mt-12 barlow-condensed-light">
                     <div id="digital-clock">4:23 PM </div> | <div id="current-date">Friday, February 23rd, 2024</div>
@@ -88,8 +78,8 @@
             </div>
             <div class="flex flex-col w-3/5 h-[80vh]">
                 <div class="flex flex-col h-[80vh] mr-6 bg-stone-700">
-                    <div class="flex justify-center w-[100%] h-[80%]">
-                        <img src="./bulletin_images/AndyM.webp" class="w-[100%]" id="main-img">
+                    <div class="flex justify-center w-[100%] h-[80%] overflow-hidden">
+                        <img src="./stock_imgs/data-driven.jpg" class="object-fill w-full h-[60em] overflow-hidden" id="main-img">
                     </div>
                     <div class="flex flex-col justify-center absolute bg-stone-500 w-[30%] h-[20%] top-[45vh] bg-opacity-80 pl-2" id="main-caption"> 
                         <h2 class="text-4xl text-white font-bold" id="main-title">Data Driven</h2>
@@ -97,14 +87,14 @@
                     </div>
                     <div class="flex justify-evenly items-center h-[20%]">
                         <div class="flex justify-center items-center h-[100%] w-[45%]" id="box-left">
-                            <img src="./bulletin_images/BruceM.webp" class="w-[35%] h-[90%]" id="img-left">
+                            <img src="./stock_imgs/family-owned.jpg" class="w-[35%] h-[90%]" id="img-left">
                             <div class="flex flex-col justify-start h-[100%] ml-2 w-[70%]">
                                 <h2 class="text-2xl text-white font-bold" id="title-left">Family Owned</h2>
                                 <h3 class="text-sm text-white" id="caption-left">Rooted in tradition, thriving through generations – a testament to the strength and unity of a family-owned business. Our commitment to quality and personalized service has been passed down with care, creating a legacy that continues to grow and evolve.</h3>
                             </div>
                         </div>
                         <div class="flex justify-center items-center h-[100%] w-[45%]">
-                        <img src="./bulletin_images/ScottB.jpg" class="w-[35%] h-[90%]" id="img-right">
+                        <img src="./stock_imgs/customer-focused.jpg" class="w-[35%] h-[90%]" id="img-right">
                         <div class="flex flex-col justify-start w-[70%] h-[100%] ml-2" id="box-right">
                             <h2 class="text-2xl text-white font-bold" id="title-right">Customer Focused</h2>
                             <h3 class="text-sm text-white" id="caption-right">Elevating excellence by serving world-class blue-chip businesses. Our commitment to precision, innovation, and top-tier service sets us apart. Join hands with a partner dedicated to exceeding the standards of the best, because your success deserves nothing less.</h3>
@@ -113,7 +103,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center items-center bg-blue-500 mt-12 -ml-8 h-1/3">
-                    <div class="flex justify-center items-center bg-red-500 text-white text-4xl h-[200%] z-10 px-4 barlow-condensed-regular" id="welcome">
+                    <div class="flex justify-center items-center bg-red-500 text-white text-4xl h-[200%] z-10 px-4 barlow-condensed-regular" id="greeting-link">
                         Welcome to Data-Mail, We're so happy to have you!
                     </div>
                 </div>
@@ -124,9 +114,10 @@
     <footer>
         <!-- This will be a fun facts ticker -->
     </footer>
-    <!-- <script src="plain_weather.js"> </script> -->
+    <script src="plain_weather.js"> </script>
     <script src="./plain.js"></script>
-    <script src="./time.js"></script>
+    <script src="../greeting.js"></script>
+    <script src="./plain_time.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex items-center justify-between mt-8 w-[100%] bg-blue-200 py-2 gradient">
+        <div class="flex items-center justify-center w-[30%] ml-4">
+            <img src="../logo.png" alt="Data-Mail Logo">
+            <h1 class="text-4xl ml-4">Data-Mail Inc.</h1>
+        </div>
+        <div class="w-[10%] mr-4">
+            Clock is going here!
+        </div>
+    </div>
+
+    <div class="flex justify-around h-[85%] mt-4">
+        <div class="w-[59%] h-[100%]">
+            <video src="Presentation.mp4" autoplay loop class="ml-4"> </video>
+        </div>
+
+        <div class="flex flex-col items-center justfy-center w-[39%] ml-4">
+            <div class="flex justify-center items-center h-[49%] w-[75%] bg-gray-400">
+                <p>Welcome</p>
+            </div>
+            <div class="flex justify-evenly h-[50%] w-[100%] h-[49%]">
+                <div class="flex flex-col items-center justify-center w-[40%] bg-blue-400 text-white">
+                    <img src="./StaticWeatherIcons/Clear.png" class="h-[50%]">
+                    <p class="text-2xl mt-4 h-[15%]">Current Weather</p>
+                    <div class="flex justify-evenly w-[100%] mt-4 pt-4 border-t-2 border-white">
+                        <p>Today's Low</p>
+                        <p>Today's High</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-evenly w-[18%] bg-blue-400 text-white text-center">
+                    <img src="./StaticWeatherIcons/Clear.png" class="h-[40%]">
+                    <div class="flex justify-evenly w-[100%]">
+                        <p>Today's Low</p>
+                        <p>Today's High</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-evenly w-[18%] bg-blue-400 text-white text-center">
+                    <img src="./StaticWeatherIcons/Clear.png" class="h-[40%]">
+                    <div class="flex justify-evenly w-[100%]">
+                        <p>Today's Low</p>
+                        <p>Today's High</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-evenly w-[18%] bg-blue-400 text-white text-center">
+                    <img src="./StaticWeatherIcons/Clear.png" class="h-[40%]">
+                    <div class="flex justify-evenly w-[100%]">
+                        <p>Today's Low</p>
+                        <p>Today's High</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex h-[10%]">
+A happy little ticker! 
+
+    </div>
+
+</body>
+
+</html>

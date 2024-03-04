@@ -1,8 +1,8 @@
 var currentIndex = 0;
 
 // Array of image sources and headers
-const imageSources = ["./neon_slideshow_images/pantone.jpg", "./neon_slideshow_images/InformedDelivery.png", "./neon_slideshow_images/2024Q1_NewHires.jpg", "./neon_slideshow_images/Hiring.png"];
-const headerTexts = ["2024 Color Of The Year", "Sign Up For Informed Delivery", "Say hello to our new employees!", "Join Our Family!"] ;
+const imageSources = ["./slideshow_icons/cmg.png", "./slideshow_icons/envelope.png", "./slideshow_icons/laser.png", "./slideshow_icons/lettershop.png", "./slideshow_icons/MCS.png", "./slideshow_icons/paper.png", "./slideshow_icons/printing.png"];
+const headerTexts = ["Commingling", "Envelope Converting", "Laser Personalization", "Lettershop Services", "Multi-Channel Services", "Paper Procurement", "Printing"] ;
 
 // Function to update image and header with fade-in effect
 function updateRotatingImages() {

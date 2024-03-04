@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         index3 = (index3 + 1) % texts.length;
       
         // Call the function again after a delay
-        setTimeout(updateContent, 8000); // Wait for 7 seconds before updating content (1s for animation + 6s delay)
+        setTimeout(updateContent, 15000); // Wait for 15 seconds before updating content (1s for animation + 6s delay)
       }
       
       // Initial call to start the loop

@@ -117,7 +117,7 @@ iconArr.forEach((element, index) => {
     if (descs2APIArr[index] == "few clouds") {
       element.src = "./neon_weather_icons/light_clouds.png";
     } else {
-      element.src = "./bulletin_images/" + descsAPIArr[index] + ".webp";
+      element.src = "./bulletin_images/" + descsAPIArr[index] + ".gif";
     }
   });
 

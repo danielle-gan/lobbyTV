@@ -128,9 +128,9 @@ ul li:nth-child(6) a{
 } */
 
 #scrolling-services {
-  height: 800px; /* Set a fixed height for the container */
-  overflow: hidden; /* Hide overflowing content */
-  position: relative; /* Ensure proper positioning of the absolute elements */
+  height: 800px;
+  overflow: hidden;
+  position: relative;
   white-space: nowrap;
   display: inline-block;
 }
@@ -141,14 +141,14 @@ ul li:nth-child(6) a{
   }
 
   50% {
-    transform: translateY(-70%);
+    transform: translateY(-60%);
   }
 }
 
 .scrolling-content {
   /* display: inline-block; */
 /* white-space: nowrap; */
-  animation: scrollUp 20s ease-in-out infinite; /* Adjust duration as needed */
+  animation: scrollUp 25s ease-in-out infinite;
 }
 
 @keyframes fadeInFromNone {

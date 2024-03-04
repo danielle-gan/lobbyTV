@@ -1,7 +1,7 @@
 var currentIndex = 0;
 
 // Array of image sources and headers
-const imageSources = ["./bulletin_images/AndyM.webp", "./bulletin_images/BruceM.webp", "./bulletin_images/ScottB.jpg"];
+const imageSources = ["./bulletin_images/AndyM.png", "./bulletin_images/BruceM.png", "./bulletin_images/ScottB.jpg"];
 const headerTexts = ["Andy Mandell", "Bruce Mandell", "Scott Braunstein"] ;
 const header2Texts = ["Founder", "Owner", "Chief of Operations"] ;
 

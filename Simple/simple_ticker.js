@@ -7,7 +7,7 @@ const funFacts = [
     "Benjamin Franklin created one of the first mail-order catalogs",
     "Direct mail can have an ROI of over 29%",
     "Personalized mail, like using the recipient's name and tailored content, tends to yield higher response rates",
-    "Modern direct mail often uses variable data printing to personalize messages and offers for individual recipients",
+    "Modern direct mail often uses variable printing to personalize messages and offers for individual recipients",
     "According to the USPS, 77% of people sort through their mail upon retrieval"
   ];
 
@@ -17,7 +17,7 @@ const funFacts = [
   function updateTicker() {
     const tickerText = document.getElementById("ticker-text");
     tickerText.textContent = funFacts[index];
-    tickerText.style.animation = 'fadeInFromNone 7.5s ease-in-out infinite';
+    tickerText.style.animation = 'fadeInFromNone 8s infinite';
 
     index = (index + 1) % funFacts.length;
 

@@ -1,5 +1,5 @@
 const funFacts = [
-    "Postcards were one of the most popular forms of direct mail marketing in the late 19th & early 20th centuries.",
+    "Postcards were one of the most popular forms of direct mail marketing in the 19th & early 20th centuries.",
     "Direct mail marketing dates back to 1000 B.C. when an Egyptian landowner sent an ad on a piece of papyrus",
     "Johannes Gutenberg developed the printing press in 1440",
     "ZIP codes were introduced in 1963 to improve the efficiency of direct mail delivery",

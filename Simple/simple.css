@@ -1,0 +1,82 @@
+@font-face {
+    font-family: aptos;
+    src: url(aptos-light.ttf);
+}
+
+.aptos {
+    font-family: aptos;
+}
+
+.dark-text {
+    color: rgb(36, 57, 63);
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.off-white-bg {
+    background-color: rgb(233,233, 233);
+}
+
+.bg-image {
+    background-image: url(./stock-mail.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.weather-grad {
+    background: rgb(191,219,254);
+}
+
+
+.weather-grad:nth-child(1) {
+    background: rgb(96,165,250);
+    background: linear-gradient(90deg, rgba(96,165,250,1) 0%, rgba(107,171,250,1) 100%);
+}
+
+.weather-grad:nth-child(2) {
+    background: rgb(107,171,250);
+    background: linear-gradient(90deg, rgba(107,171,250,1) 0%, rgba(120,179,251,1) 100%);
+}
+
+.weather-grad:nth-child(3) {
+    background: rgb(120,179,251);
+    background: linear-gradient(90deg, rgba(120,179,251,1) 0%, rgba(160,202,253,1) 100%
+)}
+
+.weather-grad:nth-child(4) {
+    background: rgb(160,202,253);
+    background: linear-gradient(90deg, rgba(160,202,253,1) 0%, rgba(191,219,254,1) 100%);
+}
+
+.ticker-grad {
+    background: rgb(191, 219, 254);
+    background: linear-gradient(90deg, rgba(191, 219, 254, 1) 15%, rgba(96, 165, 250, 1) 51%);
+}
+
+.header-grad {
+    background: rgb(191, 219, 254);
+    background: linear-gradient(270deg, rgba(191, 219, 254, 1) 21%, rgba(96, 165, 250, 1) 51%);
+}
+
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    50% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}

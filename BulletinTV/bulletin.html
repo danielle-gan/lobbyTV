@@ -214,6 +214,18 @@
     <script src="bulletin_weather.js"> </script>
     <script src="./bulletin_time.js"> </script>
     <script src="./bulletin_slideshow.js"> </script>
+
+    <script>
+        // Set the time interval in milliseconds (3 hours in this example)
+        var refreshInterval = 3 * 60 * 60 * 1000; // 3 hours in milliseconds
+        
+        function refreshPage() {
+          location.reload(true); // Reload the page (force reload from the server)
+        }
+        
+        // Set the timeout to refresh the page after the specified interval
+        setTimeout(refreshPage, refreshInterval);
+        </script>
 </body>
 
 </html>

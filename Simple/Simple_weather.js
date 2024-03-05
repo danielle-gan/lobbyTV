@@ -9,6 +9,7 @@ let apiURL = "https://" + queryURL + lat + lon + apiOptions + apiKey;
 
 //HTML IDs TO GRAB 
 var temp = document.getElementById("CurrentTemp");
+var feels = document.getElementById("CurrentFeels");
 
 var tempmin = document.getElementById("CurrentMin");
 var tempmax = document.getElementById("CurrentMax");
@@ -122,6 +123,7 @@ fetch(apiURL)
         console.log(DescsArr, Descs2Arr);
 
         let currentTemp = Math.round(data.list[0].main.temp);
+        let currentFeels = Math.round(data.list[0].main.feels_like);
         let currentDesc = DescsArr[0];
         let currentDesc2 = Descs2Arr[0];
         let currentMin = MinArr[0];
@@ -149,6 +151,7 @@ fetch(apiURL)
         let descs2APIArr = [currentDesc2, tomorrowDesc2, day2Desc2, day3Desc2]
 
             temp.innerHTML = currentTemp + `&deg;F`;
+            feels.innerHTML = 'Feels like ' + currentFeels + `&deg;F`;
         //     // animateWeather(currentDesc);
 
         minArr.forEach((element, index) => {

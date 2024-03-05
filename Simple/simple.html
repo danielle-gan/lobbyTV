@@ -26,29 +26,35 @@
 
         <div class="flex items-center justify-around w-[100%] h-[50rem] mt-8">
             <div class="flex justify-center w-[59%] h-[100%] bg-blue-200 rounded-md">
-                <video src="Presentation.mp4" autoplay loop class="w-[96%]"> </video>
+                <video autoplay loop class="w-[96%]">
+                    <source src="Presentation.mp4" type="video/mp4">
+                </video>
             </div>
 
             <div class="flex flex-col items-center justfy-between ml-4 w-[40%] h-[100%]">
                 <div class="flex flex-col justify-center items-center h-[49%] w-[96%] bg-gray-400 bg-image rounded-md">
-                    <div class="flex flex-col bg-stone-500 bg-opacity-80 w-[70%] h-[70%] items-center justify-center text-white">
+                    <div
+                        class="flex flex-col bg-stone-500 bg-opacity-80 w-[70%] h-[70%] items-center justify-center text-white">
                         <p class="text-4xl text-white aptos" id="greeting-link">
                             WELCOME TO DATA-MAIL!
                         </p>
                         <p class="text-2xl montserrat dark-text font-bold">We're so happy to have you</p>
                     </div>
-                    
+
                 </div>
                 <div class="flex justify-between h-[49%] w-[96%] mt-auto aptos">
-                    <div class="flex flex-col items-center justify-center w-[40%] text-white weather-grad rounded-md text-2xl">
+                    <div
+                        class="flex flex-col items-center justify-center w-[40%] text-white weather-grad rounded-md text-2xl">
                         <img src="./StaticWeatherIcons/Clear.png" class="h-[50%]" id="CurrentIcon">
                         <p class="text-4xl h-[11%]" id="CurrentTemp">Current Weather</p>
-                        <div class="flex justify-evenly mt-2 w-[100%] h-[4rem] mt-4 pt-4 border-t-2 border-white off-white-bg dark-text">
+                        <div
+                            class="flex justify-evenly mt-2 w-[100%] h-[4rem] mt-4 pt-4 border-t-2 border-white off-white-bg dark-text">
                             <p id="CurrentMin">Today's Low</p>
                             <p id="CurrentMax">Today's High</p>
                         </div>
                     </div>
-                    <div class="flex flex-col items-center justify-evenly w-[18%] text-white text-center weather-grad rounded-md text-2xl">
+                    <div
+                        class="flex flex-col items-center justify-evenly w-[18%] text-white text-center weather-grad rounded-md text-2xl">
                         <p id="Day1Label">Tomorrow</p>
                         <img src="./StaticWeatherIcons/Clear.png" class="h-[40%]" id="TomorrowIcon">
                         <div class="flex items-center justify-evenly w-[100%] off-white-bg dark-text h-[4rem]">
@@ -56,7 +62,8 @@
                             <p id="TomorrowMax">Today's High</p>
                         </div>
                     </div>
-                    <div class="flex flex-col items-center justify-evenly w-[18%] text-white text-center weather-grad rounded-md text-2xl">
+                    <div
+                        class="flex flex-col items-center justify-evenly w-[18%] text-white text-center weather-grad rounded-md text-2xl">
                         <p id="Day2Label">Day 2</p>
                         <img src="./StaticWeatherIcons/Clear.png" class="h-[40%]" id="Day2Icon">
                         <div class="flex items-center justify-evenly w-[100%] off-white-bg dark-text h-[4rem]">
@@ -64,7 +71,8 @@
                             <p id="Day2Max">Today's High</p>
                         </div>
                     </div>
-                    <div class="flex flex-col items-center justify-evenly w-[18%] text-white text-center weather-grad rounded-md text-2xl">
+                    <div
+                        class="flex flex-col items-center justify-evenly w-[18%] text-white text-center weather-grad rounded-md text-2xl">
                         <p id="Day3Label">Day 3</p>
                         <img src="./StaticWeatherIcons/Clear.png" class="h-[40%]" id="Day3Icon">
                         <div class="flex items-center justify-evenly w-[100%] off-white-bg dark-text h-[4rem]">
@@ -87,4 +95,5 @@
 <script src="simple_weather.js"> </script>
 <script src="simple_ticker.js"> </script>
 <script src="simple_greeting.js"></script>
+
 </html>

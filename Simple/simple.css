@@ -5,10 +5,11 @@
 
 .aptos {
     font-family: aptos;
+    font-weight: 500;
 }
 
 .dark-text {
-    color: rgb(36, 57, 63);
+    color: rgb(19, 31, 34);
 }
 
 .montserrat {
@@ -29,38 +30,21 @@
 }
 
 .weather-grad {
-    background: rgb(191,219,254);
-}
-
-
-.weather-grad:nth-child(1) {
-    background: rgb(96,165,250);
-    background: linear-gradient(90deg, rgba(96,165,250,1) 0%, rgba(107,171,250,1) 100%);
-}
-
-.weather-grad:nth-child(2) {
-    background: rgb(107,171,250);
-    background: linear-gradient(90deg, rgba(107,171,250,1) 0%, rgba(120,179,251,1) 100%);
-}
-
-.weather-grad:nth-child(3) {
-    background: rgb(120,179,251);
-    background: linear-gradient(90deg, rgba(120,179,251,1) 0%, rgba(160,202,253,1) 100%
-)}
-
-.weather-grad:nth-child(4) {
-    background: rgb(160,202,253);
-    background: linear-gradient(90deg, rgba(160,202,253,1) 0%, rgba(191,219,254,1) 100%);
+    background: rgb(15, 79, 156);
+    border: 2px solid rgb(15, 79, 156);
 }
 
 .ticker-grad {
-    background: rgb(191, 219, 254);
-    background: linear-gradient(90deg, rgba(191, 219, 254, 1) 15%, rgba(96, 165, 250, 1) 51%);
+    background: linear-gradient(90deg,rgb(233,233, 233) 8%, rgb(15, 79, 156) 51%);
+    border: 2px solid rgb(15, 79, 156);
 }
 
 .header-grad {
     background: rgb(191, 219, 254);
-    background: linear-gradient(270deg, rgba(191, 219, 254, 1) 21%, rgba(96, 165, 250, 1) 51%);
+    background: linear-gradient(270deg, rgb(233,233, 233) 15%, rgb(15, 79, 156)51%);
+    border: 2px solid rgb(15, 79, 156);
+    /* background-size: 300% 100%; */
+    /* animation: gradientAnimation 10s ease alternate infinite; */
 }
 
 
@@ -80,3 +64,21 @@
         opacity: 0;
     }
 }
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+
+  .text-shadow {
+    text-shadow: 2px 2px 1px #000;
+  }
+
+  .text-highlight {
+    text-shadow: 1px 1px 0px rgb(191, 219, 254);
+  }
